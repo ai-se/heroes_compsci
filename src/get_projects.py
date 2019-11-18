@@ -40,15 +40,21 @@ def get_heros():
             api_base_url = project_list.loc[i,'api_base_url']
             repo_name = project_list.loc[i,'repo_name'] 
             git_data = git_commit_info.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+            print "Creating data"
             git_data.create_data()
+            print "Data created"
             if platform.system() == 'Darwin' or platform.system() == 'Linux':
                 data_path = up(os.getcwd()) + '/data/' + repo_name + '/'
             else:
                 data_path = up(os.getcwd()) + '\\data\\' + repo_name + '\\'
+
+            print "data_path = " + data_path
             
             if not Path(data_path).is_dir():
+                print "In making of dir"
                 os.makedirs(Path(data_path))
             
+            print "Got data path"
             cg = get_commit_lines.create_code_interaction_graph(git_url,repo_name)
             project_details = cg.get_user_node_degree()
             project_details.sort_values(by='ob',inplace=True)
