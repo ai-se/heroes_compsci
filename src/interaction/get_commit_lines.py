@@ -107,7 +107,8 @@ class create_code_interaction_graph(object):
         graph_util = utils.utils()
         print("starting graph")
         connection_matrix = self.get_bug_creators(self.diffs)
-        connection_matrix.to_csv('temp.csv')
+        print "connection_matrix"
+        connection_matrix.to_csv('temp.csv', encoding='utf-8')
         print("Done everything")
         self.repo_obj.repo_remove()
         return connection_matrix#,connection_matrix

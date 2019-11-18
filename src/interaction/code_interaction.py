@@ -123,7 +123,7 @@ class create_code_interaction_graph(object):
                 bug_creator_df = pd.concat([bug_creator_df,response])
                 bug_creator_df.reset_index(inplace = True, drop = True)
         bug_creator_df_final = bug_creator_df
-        bug_creator_df.to_csv('temp.csv')
+        bug_creator_df.to_csv('temp.csv', encoding='utf-8')
         bug_creator_df = bug_creator_df.drop(['commit'], axis = 1)
         df = bug_creator_df.groupby( ['committer1','committer2']).sum()
 

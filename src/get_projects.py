@@ -17,6 +17,7 @@ import os
 from pathlib import Path
 import platform
 from main.git_log import git2data,git_commit_info
+import traceback
 
 
 def get_heros():
@@ -52,10 +53,11 @@ def get_heros():
             
             if not Path(data_path).is_dir():
                 print "In making of dir"
-                os.makedirs(Path(data_path))
+                os.makedirs(data_path)
             
             print "Got data path"
             cg = get_commit_lines.create_code_interaction_graph(git_url,repo_name)
+            print "Code interaction graph created"
             project_details = cg.get_user_node_degree()
             project_details.sort_values(by='ob',inplace=True)
             project_details['cum_sum'] = project_details.ob.cumsum()
@@ -81,9 +83,11 @@ def get_heros():
                 else:
                     project_list.iloc[i,7+k] = False
 
-            project_list.to_csv(up(os.getcwd()) + '/hero_list.csv')
+            project_list.to_csv(up(os.getcwd()) + '/hero_list.csv', encoding='utf-8')
         except Exception as e:
             print("Error",e)
+            traceback.print_exc()
+            #traceback.print_stack()
             continue
     return project_list
 
