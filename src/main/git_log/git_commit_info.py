@@ -46,16 +46,16 @@ class git2data(object):
         return commit_df,committed_files_df
     
     def create_data(self):
-        print "Getting commit data"
+        print("Getting commit data")
         self.get_commit_data()
-        print "Getting committed files"
+        print("Getting committed files")
         self.get_committed_files()
-        print "Creating link"
+        print("Creating link")
         commit_data,committed_file_data = self.create_link()
-        print "Link created"
-        print "Creating pickles"
-        print "Data path = " + self.data_path
-        print "Repo_name = " + self.repo_name
+        print("Link created")
+        print("Creating pickles")
+        print("Data path = " + self.data_path)
+        print("Repo_name = " + self.repo_name)
         commit_data.to_pickle(self.data_path + self.repo_name + '_commit.pkl')
         committed_file_data.to_pickle(self.data_path + self.repo_name + '_committed_file.pkl')
         self.git_repo.repo_remove()

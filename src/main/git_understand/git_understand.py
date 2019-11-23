@@ -303,7 +303,7 @@ class MetricsGetter(object):
         # Determine the path to save file
         save_path = self.cwd.joinpath('datasets', self.repo_name+".csv")
         # Save the dataframe (no index column)
-        self.metrics_dataframe.to_csv(save_path, index=False, encoding='utf-8')
+        self.metrics_dataframe.to_csv(save_path, index=False)
 
     def __exit__(self, exception_type, exception_value, traceback):
         """
