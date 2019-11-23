@@ -52,7 +52,7 @@ def get_heros():
             print("data_path = " + data_path)
             
             if not Path(data_path).is_dir():
-                print "In making of dir"
+                print("In making of dir")
                 os.makedirs(data_path)
             
             print("Got data path")
@@ -71,17 +71,17 @@ def get_heros():
                         continue
                     else:
                         break
-                project_list.iloc[i,11] = project_details.shape[0]
+                project_list.iloc[i,10] = project_details.shape[0]
 
                 if project_details.shape[0] < 8:
                     continue
                 if 1 == j/project_details.shape[0]:
-                    project_list.iloc[i,7+k] = False
+                    project_list.iloc[i,6+k] = False
                     continue
                 if ((1 - j/project_details.shape[0])<population_list[k]):
-                    project_list.iloc[i,7+k] = True 
+                    project_list.iloc[i,6+k] = True
                 else:
-                    project_list.iloc[i,7+k] = False
+                    project_list.iloc[i,6+k] = False
         except Exception as e:
             print("Error",e)
             traceback.print_exc()
