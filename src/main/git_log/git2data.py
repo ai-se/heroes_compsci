@@ -65,34 +65,37 @@ class git2data(object):
         links = events_df.dropna()
         links.reset_index(inplace=True)
         issue_commit_temp = []
+        issue_set_1 = set(issue_commit_list_1[:,0])
         #print("Phase two done")
         for i in range(links.shape[0]):
-            if links.loc[i,'commit_number'] in issue_commit_list_1[:,0]:
+            if links.loc[i,'commit_number'] in issue_set_1:
                 continue
             else:
                 issue_commit_temp.append([links.loc[i,'commit_number'],links.loc[i,'issue_number']])
         issue_commit_list_2 = np.array(issue_commit_temp)
         issue_commit_list = np.append(issue_commit_list_1,issue_commit_list_2, axis = 0)
-        issue_commit_df = pd.DataFrame(issue_commit_list, columns = ['commit_id','issues']).drop_duplicates()
-        df_unique_issues = issue_commit_df.issues.unique()
+
+        commit_to_issues = {}
+        issue_to_commits = {}
+
         #print("Phase three done")
-        for i in df_unique_issues:
-            i = np.int64(i)
-            commits = issue_commit_df[issue_commit_df['issues'] == i]['commit_id']
-            x = issue_df['Issue_number'] == i
-            j = x[x == True].index.values
-            if len(j) != 1:
-                continue
-            issue_df.at[j[0],'commits'] = commits.values
-        df_unique_commits = issue_commit_df.commit_id.unique()
-        #print("Phase four done")
-        for i in df_unique_commits:
-            issues = issue_commit_df[issue_commit_df['commit_id'] == i]['issues']
-            x = commit_df['commit_number'] == i
-            j = x[x == True].index.values
-            if len(j) != 1:
-                continue
-            commit_df.at[j[0],'issues'] = issues.values
+        issue_commit_df = pd.DataFrame(issue_commit_list, columns = ['commit_id','issues'])
+        for index,row in issue_commit_df.iterrows():
+            commit_num = row['commit_id']
+            issue_id = np.int64(row['issues'])
+            commit_to_issues.setdefault(commit_num, set()).add(issue_id)
+            issue_to_commits.setdefault(issue_id, set()).add(commit_num)
+
+        for index,row in issue_df.iterrows():
+            issue_id = np.int64(row['Issue_number'])
+            if issue_id in issue_to_commits:
+                issue_df.at[index,'commits'] = issue_to_commits[issue_id]
+
+        for index,row in commit_df.iterrows():
+            commit_num = row['commit_number']
+            if commit_num in commit_to_issues:
+                commit_df.at[index,'issues'] = commit_to_issues[commit_num]
+
         issue_comments_df = pd.DataFrame(self.git_issue_comments, columns = ['Issue_id','user_logon','commenter_type'])
         committed_files_df = pd.DataFrame(self.git_committed_files, columns = ['commit_id','file_id','file_mode','file_path'])
         user_df = pd.DataFrame(self.user_map, columns = ['user_name','user_logon'])

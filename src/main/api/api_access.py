@@ -23,7 +23,6 @@ class git_api_access(object):
         self.api_base_url = api_base_url
         self.repo_name = repo_name
         self.client = self.get_git_client()
-        self.get_git_client()
         
     def get_git_client(self):
         self.client = git_access.GitHubClient({'access_token': self.access_token,
@@ -32,6 +31,7 @@ class git_api_access(object):
                        'git_url': self.git_url, 
                        'api_base_url': self.api_base_url, 
                        'repo_name': self.repo_name})
+        return self.client
     
     def create_base_url(self, url_type):
         self.url_type = url_type
@@ -61,7 +61,7 @@ class git_api_access(object):
                 user_logon = x[i]['user']['login']
                 author_association = x[i]['author_association']
                 comments_details.append([issue_number,user_logon,author_association])
-                self.set_uniq_users(comments_details)
+        self.set_uniq_users(comments_details)
         return comments_details
     
     

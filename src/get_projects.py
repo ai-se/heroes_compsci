@@ -67,7 +67,7 @@ def get_heros():
             population_list = [0.2,0.15,0.1,0.05]
             for k in range(4):
                 for j in range(project_details.shape[0]):
-                    if project_details.iloc[j,1] <= project_details.ob.sum()*contr_list[k]:
+                    if project_details.iloc[j,1] <= total_loc*contr_list[k]:
                         continue
                     else:
                         break
@@ -82,12 +82,15 @@ def get_heros():
                     project_list.iloc[i,7+k] = True 
                 else:
                     project_list.iloc[i,7+k] = False
-
-            project_list.to_csv(up(os.getcwd()) + '/hero_list.csv')
         except Exception as e:
             print("Error",e)
             traceback.print_exc()
             continue
+    try:
+        project_list.to_csv(up(os.getcwd()) + '/hero_list.csv')
+    except Exception as e:
+        print("Error", e)
+        traceback.print_exc()
     return project_list
 
 get_heros()
