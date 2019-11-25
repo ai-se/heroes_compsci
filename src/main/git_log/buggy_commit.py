@@ -55,6 +55,7 @@ class buggy_commit_maker(object):
         self.committed_files = self.read_files('committed_file')
         self.initilize_repo(repo_url,repo_name)
         self.cores = cpu_count()
+        self.blame_count = 0
         
     def initilize_repo(self,repo_url,repo_name):
         self.git_repo = git2repo.git2repo(repo_url,repo_name)
@@ -121,6 +122,7 @@ class buggy_commit_maker(object):
                     file_path = _diff_files[_value]['file_path']
                     # TODO: We may try just to get blame just for the lines we want.
                     #print("Get blame start")
+                    self.blame_count += 1
                     blame = self.git_repo.get_blame(file_path)
                     #print("Get blame ended")
                     for _line in _diff_files[_value]['old_lines']:
@@ -162,6 +164,7 @@ class buggy_commit_maker(object):
                 response = th.join()
                 df = pd.concat([df,response])
                 df.reset_index(inplace = True, drop = True)
+        print("Blame count = " + str(self.blame_count))
         df.drop_duplicates(inplace = True)
         df = df.groupby( ['committer']).count()
         defect_count = []

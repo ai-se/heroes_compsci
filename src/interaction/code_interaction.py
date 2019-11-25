@@ -63,6 +63,7 @@ class create_code_interaction_graph(object):
         #self.committed_files = self.repo_obj.get_committed_files()
         self.diffs = self.get_diffs()
         self.cores = cpu_count()
+        self.blame_count = 0
         
     def read_commits(self):
         df = pd.read_pickle(self.file_path)
@@ -91,6 +92,7 @@ class create_code_interaction_graph(object):
                 try:
                     file_path = _diff_files[_value]['file_path']
                     #print("Get blame start in get_bug_creators")
+                    self.blame_count += 1
                     blame = self.repo_obj.get_blame(file_path)
                     #print("Get blame end in get_bug_creators")
                     for _line in _diff_files[_value]['old_lines']:
@@ -125,6 +127,7 @@ class create_code_interaction_graph(object):
                 response = th.join()
                 bug_creator_df = pd.concat([bug_creator_df,response])
                 bug_creator_df.reset_index(inplace = True, drop = True)
+        print("Code interaction blame_count = " + str(self.blame_count))
         bug_creator_df_final = bug_creator_df
         bug_creator_df.to_csv('temp.csv')
         bug_creator_df = bug_creator_df.drop(['commit'], axis = 1)
