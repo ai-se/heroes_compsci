@@ -105,7 +105,7 @@ class create_social_inteaction_graph(object):
             response = th.join()
 
         for item in result:
-            connection_matrix[item[0]][item[1]] += item[2]
+            connection_matrix[self.user_dict[item[0]]][self.user_dict[item[1]]] += item[2]
         return connection_matrix
         
     def create_adjacency_matrix(self):
@@ -135,7 +135,7 @@ class create_social_inteaction_graph(object):
                     user1_count = user_count_dict[user1]
                     for user2 in user_count_dict:
                         if (user2 != user1):
-                            connection_matrix[user1][user2] += user1_count
+                            connection_matrix[self.user_dict[user1]][self.user_dict[user2]] += user1_count
         return connection_matrix
                     
     
