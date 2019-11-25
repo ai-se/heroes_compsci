@@ -41,7 +41,9 @@ for i in range(project_list.shape[0]):
             os.makedirs(Path(data_path))
         
         sg = social_interaction.create_social_inteaction_graph(repo_name)
+        print("Initiated social interaction graph")
         cg = code_interaction.create_code_interaction_graph(git_url,repo_name)
+        print("Initiated code interaction graph")
         
         bugs_data = buggy_commit.buggy_commit_maker(repo_name,git_url,repo_name)
         bugs_data.get_buggy_commits()
@@ -72,6 +74,7 @@ for i in range(project_list.shape[0]):
         sg_data_df = pd.DataFrame(sg_data_list, columns = ['committer', 'count'])
         cg_data_df = pd.DataFrame(cg_data_list, columns = ['committer', 'count'])
         
+        #TODO: This seems like same calculation as commit_data calculated above
         committer_count = []
         for i in range(bugs_data.commit.shape[0]):
             commit_id = bugs_data.commit.loc[i,'commit_number']

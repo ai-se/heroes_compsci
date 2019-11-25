@@ -96,6 +96,7 @@ class buggy_commit_maker(object):
             th.start()
         for th in threads:
             response = th.join()
+            #TODO: This may be slow. We may explore faster dynamic concat
             bug_fixed_commit = pd.concat([bug_fixed_commit,response])
             bug_fixed_commit.reset_index(inplace = True, drop = True)
         self.commit = bug_fixed_commit
@@ -118,7 +119,10 @@ class buggy_commit_maker(object):
             for _value in _diff_files:
                 try:
                     file_path = _diff_files[_value]['file_path']
+                    # TODO: We may try just to get blame just for the lines we want.
+                    #print("Get blame start")
                     blame = self.git_repo.get_blame(file_path)
+                    #print("Get blame ended")
                     for _line in _diff_files[_value]['old_lines']:
                         if _line != -1:
                             ref = blame.for_line(_line)
@@ -136,16 +140,21 @@ class buggy_commit_maker(object):
         df = pd.DataFrame([])
         # To-Do this is to saperate the data into small chunks from get_diff that is the dict
         buggy_commit_df = self.commit[self.commit['isBuggy'] == 1]
+        #TODO: Can't we reuse the diffs calculated above?
+        print("Starting finding diffs to get buggy committer")
         buggy_diffs = self.git_repo.get_diffs(buggy_commit_df['commit_number'].values.tolist())
+        print("Finished getting diffs to get buggy committer")
         keys = list(buggy_diffs.keys())
+        keys_set = set(buggy_diffs.keys())
         len_bd = len(buggy_diffs)
         sub_list_len = len_bd/self.cores
         for i in range(self.cores):
             sub_keys = keys[int(i*sub_list_len):int((i+1)*sub_list_len)]
-            subdict = {x: buggy_diffs[x] for x in sub_keys if x in buggy_diffs}
+            subdict = {x: buggy_diffs[x] for x in sub_keys if x in keys_set}
             t = ThreadWithReturnValue(target = self.buggy_committer, args = [subdict])
             threads.append(t)
         for i in range(0,len(threads),self.cores):
+            print("i = " + str(i))
             _threads = threads[i:i+self.cores]
             for th in _threads:
                 th.start()
@@ -197,6 +206,7 @@ class buggy_commit_maker(object):
             user = self.repo.get(commit_id).committer
             committer_count.append([user.name, commit_id, 1])
         committer_count_df = pd.DataFrame(committer_count, columns = ['committer', 'commit_id', 'ob'])
+        #TODO: No advantage asymtotically, but we can directly calculate the user commit count
         committer_count_df = committer_count_df.drop_duplicates()
         df = committer_count_df.groupby( ['committer']).count()
         commit_count = []

@@ -90,7 +90,9 @@ class create_code_interaction_graph(object):
             for _value in _diff_files:
                 try:
                     file_path = _diff_files[_value]['file_path']
+                    #print("Get blame start in get_bug_creators")
                     blame = self.repo_obj.get_blame(file_path)
+                    #print("Get blame end in get_bug_creators")
                     for _line in _diff_files[_value]['old_lines']:
                         if _line != -1:
                             ref = blame.for_line(_line)
@@ -108,9 +110,10 @@ class create_code_interaction_graph(object):
         keys = list(self.diffs.keys())
         len_bd = len(self.diffs)
         sub_list_len = len_bd/self.cores
+        keys_set = set(self.diffs.keys())
         for i in range(self.cores):
             sub_keys = keys[int(i*sub_list_len):int((i+1)*sub_list_len)]
-            subdict = {x: self.diffs[x] for x in sub_keys if x in self.diffs}
+            subdict = {x: self.diffs[x] for x in sub_keys if x in keys_set}
             t = ThreadWithReturnValue(target = self.get_bug_creators, args = [subdict])
             threads.append(t)
         for i in range(0,len(threads),self.cores):
@@ -196,9 +199,10 @@ class create_code_interaction_graph(object):
     
     def get_user_node_degree(self):
         graph_util = utils.utils()
-        print("starting graph")
+        print("starting code graph get_node_degree creation of adjacency matrix")
         connection_matrix,uniq_users,user_dict,bug_creator_df_final = self.create_adjacency_matrix()
-        print("done graph")
+        print("done code graph get_node_degree creation of adjacency matrix")
+        #TODO: We may get better performance, by not creating the graph at all, if all we need is the degree.
         degree,G = graph_util.create_graph(connection_matrix)
         print("getting degree")
         user_degree = {}
