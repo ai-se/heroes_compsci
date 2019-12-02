@@ -104,7 +104,7 @@ def getKGraph():
         m_val = m_count_map.get(cluster_no, 0)
         se_val = se_count_map.get(cluster_no, 0)
         ratio = (m_val / se_val) if se_val != 0 else 'INF'
-        print("Cluster no " + str(cluster_no) + ": " + str(ratio))
+        print("Cluster no " + str(cluster_no) + ": " + str(ratio) + "  (cluster count = " + str(m_val+se_val) + ")")
 
     #print(combined_df.drop(xAttributesNorm, axis=1).sort_values(by=['cluster_no']))
 

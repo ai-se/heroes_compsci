@@ -18,11 +18,11 @@ MoISSI count:
 [99 rows x 6 columns]
 MoISSI / SE ratios: (ideal count ~ 1.475)
 INF = Only MoISSI cluster, 0.0 = Only SE cluster
-Cluster no 0: 0.9666666666666667
-Cluster no 1: 6.0
-Cluster no 2: INF
-Cluster no 3: INF
-Cluster no 4: 0.0
-Cluster no 5: INF
-Cluster no 6: 1.75
-Cluster no 7: INF
+Cluster no 0: 0.9666666666666667  (cluster count = 59)
+Cluster no 1: 6.0  (cluster count = 7)
+Cluster no 2: INF  (cluster count = 1)
+Cluster no 3: INF  (cluster count = 2)
+Cluster no 4: 0.0  (cluster count = 1)
+Cluster no 5: 1.75  (cluster count = 22)
+Cluster no 6: INF  (cluster count = 4)
+Cluster no 7: INF  (cluster count = 3)
