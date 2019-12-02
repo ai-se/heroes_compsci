@@ -1,0 +1,28 @@
+SE count:
+40
+MoISSI count:
+59
+                              Project Github Link  Developers  Commits #  Closed Issues  Releases    Type
+0          https://github.com/trellis-ldp/trellis         3.0      552.0          112.0       8.0  MoISSI
+1                   https://github.com/TACC/abaco         7.0     1112.0           16.0       7.0  MoISSI
+2              https://github.com/nds-org/ndslabs         7.0     1306.0           19.0      18.0  MoISSI
+3          https://github.com/PCMSolver/pcmsolver         8.0     1844.0           56.0      16.0  MoISSI
+4              https://github.com/choderalab/yank         8.0     2728.0          436.0      34.0  MoISSI
+..                                            ...         ...        ...            ...       ...     ...
+94        https://github.com/rickynils/scalacheck        95.0     1309.0          211.0      43.0      SE
+95  https://github.com/CloudBotIRC/CloudBotLegacy        35.0     1642.0           76.0       6.0      SE
+96                 https://github.com/melpa/melpa      1151.0    10545.0          765.0       0.0      SE
+97             https://github.com/ioerror/tlsdate        34.0      707.0           69.0      27.0      SE
+98           https://github.com/chrisdew/protobuf        13.0       62.0           23.0       3.0      SE
+
+[99 rows x 6 columns]
+MoISSI / SE ratios: (ideal count ~ 1.475)
+INF = Only MoISSI cluster, 0.0 = Only SE cluster
+Cluster no 0: 0.9666666666666667
+Cluster no 1: 6.0
+Cluster no 2: INF
+Cluster no 3: INF
+Cluster no 4: 0.0
+Cluster no 5: INF
+Cluster no 6: 1.75
+Cluster no 7: INF
