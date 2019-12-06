@@ -106,6 +106,9 @@ def getKGraph():
         ratio = (m_val / se_val) if se_val != 0 else 'INF'
         print("Cluster no " + str(cluster_no) + ": " + str(ratio) + "  (cluster count = " + str(m_val+se_val) + ")")
 
+    something = combined_df.groupby(combined_df['cluster_no'])[xAttributes].median()
+    print(something)
+
     #print(combined_df.drop(xAttributesNorm, axis=1).sort_values(by=['cluster_no']))
 
 getKGraph()
