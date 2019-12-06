@@ -61,7 +61,7 @@ def cleanup_se(file_name):
 
 def getKGraph():
     mossi_df = cleanup_moissi('MolSSI Projects DB - top_projects.csv')
-    se_df = cleanup_se('se_project_data.csv')
+    se_df = cleanup_se('se_projects_with_other_attributes.csv')
     extraAttributesToBeKept = ['Project Github Link', 'Type']
 
     combined_df = pd.concat([mossi_df, se_df], axis=0)
@@ -90,5 +90,5 @@ def getKGraph():
     plt.show()
 
 #getKGraph('MolSSI Projects DB - top_projects.csv')
-#getKGraph('se_project_data.csv')
+#getKGraph('se_projects_with_other_attributes.csv')
 getKGraph()

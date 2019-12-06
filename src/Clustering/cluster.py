@@ -61,7 +61,7 @@ def cleanup_se(file_name):
 
 def getKGraph():
     mossi_df = cleanup_moissi('MolSSI Projects DB - top_projects.csv')
-    se_df = cleanup_se('se_project_data.csv')
+    se_df = cleanup_se('se_projects_with_other_attributes.csv')
 
     print("SE count:")
     print(se_df.shape[0])

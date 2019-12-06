@@ -27,9 +27,16 @@ else:
 
 source_projects = pd.read_csv(source_projects)
 
+small_projects = source_projects[(source_projects['num_dev'] >= 8) & (source_projects['num_dev'] < 15)]
+medium_projects = source_projects[(source_projects['num_dev'] >= 15) & (source_projects['num_dev'] < 30)]
+large_projects = source_projects[source_projects['num_dev'] >= 30]
+
 # Sampling - TODO: Do this multiple times and ways
-sample_size = 40
-sample_projects = source_projects.sample(sample_size).reset_index()
+small_sample = small_projects.sample(20)
+medium_sample = medium_projects.sample(20)
+large_sample = large_projects.sample(19)
+sample_projects = pd.concat([small_sample, medium_sample, large_sample], axis=0)
+sample_projects.reset_index(inplace=True, drop=True)
 sample_projects['Developers'] = sample_projects['num_dev']
 sample_projects['Commits #'] = [0]*sample_projects.shape[0]
 sample_projects['Closed Issues'] = [0]*sample_projects.shape[0]
@@ -38,6 +45,6 @@ sample_projects['Releases'] = [0]*sample_projects.shape[0]
 sample_projects['Active years'] = [0]*sample_projects.shape[0]
 xAttributes = ['Developers', 'Commits #', 'Closed Issues', 'Releases']
 keepAttributes = ['git_url']
-removeAttributes = ['index', 'repo_name', 'repo_owner', 'api_base_url', 'source_type', 'access_token', 'lang', 'heros_80', 'heros_85', 'heros_90', 'heros_95', 'num_dev']
-sampe_projects = sample_projects.drop(removeAttributes, axis = 1).to_csv("SE_projects.csv", index=False)
+removeAttributes = ['repo_name', 'repo_owner', 'api_base_url', 'source_type', 'access_token', 'lang', 'heros_80', 'heros_85', 'heros_90', 'heros_95', 'num_dev']
+sampe_projects = sample_projects.drop(removeAttributes, axis = 1).to_csv("SE_projects_2.csv", index=False)
 print(sample_projects)
