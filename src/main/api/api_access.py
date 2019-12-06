@@ -81,7 +81,7 @@ class git_api_access(object):
             user_mapping.append([user_name,user_logon])  
         return user_mapping
     
-    def get_issues(self,url_type,url_details = ''):
+    def get_issues(self,url_type,url_details = '',extra_details=False):
         self.create_base_url(url_type)
         self.create_advanced_url(url_details)
         x = [0]*100
@@ -103,7 +103,15 @@ class git_api_access(object):
                     labels = x[i]['labels'][0]['name']
                 else:
                     labels = None
-                issue_details.append([issue_number,user_logon,author_type,desc,title,labels])
+                state = x[i]['state']
+                if 'pull_request' in x[i]:
+                    is_issue = False
+                else:
+                    is_issue = True
+                if (extra_details):
+                    issue_details.append([issue_number,user_logon,author_type,desc,title,labels,state, is_issue])
+                else:
+                    issue_details.append([issue_number,user_logon,author_type,desc,title,labels])
         return issue_details
     
     
@@ -129,5 +137,80 @@ class git_api_access(object):
                     print('Some Issue in issues')
                     continue
         return event_details
-    
-    
+
+    def get_releases(self,url_type,url_details = ''):
+        self.create_base_url(url_type)
+        self.create_advanced_url(url_details)
+        x = [0]*100
+        page_number = 1
+        release_details = []
+        while len(x) >= 100 and page_number<=400:
+            paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
+            #paged_url = self.advanced_url
+            page_number += 1
+            print(paged_url)
+            res = self.client.get(paged_url)
+            x = json.loads(res.content)
+            for i in range(len(x)):
+                try:
+                    release_id = x[i]['id']
+                    release_details.append([release_id])
+                except:
+                    print('Some issue in getting releases')
+                    continue
+        return release_details
+
+    def get_list_details(self,url_type,url_details = ''):
+        self.create_base_url(url_type)
+        self.create_advanced_url(url_details)
+        x = [0]*100
+        page_number = 1
+        details = []
+        while len(x) >= 100 and page_number<=400:
+            paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
+            #paged_url = self.advanced_url
+            page_number += 1
+            print(paged_url)
+            res = self.client.get(paged_url)
+            x = json.loads(res.content)
+            for i in range(len(x)):
+                try:
+                    object_id = x[i]['id']
+                    details.append([object_id])
+                except:
+                    print('Some issue in getting objects')
+                    continue
+        return details
+
+    def get_list_count(self,url_type,url_details = ''):
+        self.create_base_url(url_type)
+        self.create_advanced_url(url_details)
+        x = [0]*100
+        page_number = 1
+        count = 0
+        while len(x) >= 100 and page_number<=400:
+            paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
+            #paged_url = self.advanced_url
+            page_number += 1
+            print(paged_url)
+            res = self.client.get(paged_url)
+            x = json.loads(res.content)
+            count += len(x)
+        return count
+
+    def get_github_repo(self):
+        self.base_url = self.api_base_url + '/repos/' + self.repo_owner + '/' + self.repo_name
+        self.create_advanced_url()
+        print(self.advanced_url)
+        res = self.client.get(self.advanced_url)
+        x = json.loads(res.content)
+        return x
+
+    def get_languages(self,url_type,url_details = ''):
+        self.create_base_url(url_type)
+        self.create_advanced_url(url_details)
+        print(self.advanced_url)
+        res = self.client.get(self.advanced_url)
+        x = json.loads(res.content)
+        return x
+

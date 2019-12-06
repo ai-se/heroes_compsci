@@ -278,7 +278,7 @@ class git2repo(object):
         return self.repo.blame(file_path,flags = 'GIT-BLAME_TRACK_COPIES_ANY_COMMIT_COPIES')
     
     
-    def get_commits(self):
+    def get_commits(self, extra_details = False):
         _commits = self.get_current_commit_objects()
         commits = []
         for commit in _commits:
@@ -293,6 +293,11 @@ class git2repo(object):
                 commit_parent = None
             else:
                 commit_parent = commit.parent_ids[0].hex
-            commits.append([commit_id,commit_message,commit_parent,commits_buggy])
+            commit_time = commit.commit_time
+            commit_time_offset = commit.commit_time_offset
+            if extra_details:
+                commits.append([commit_id,commit_message,commit_parent,commits_buggy, commit_time])
+            else:
+                commits.append([commit_id,commit_message,commit_parent,commits_buggy])
         return commits
         

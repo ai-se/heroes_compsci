@@ -22,19 +22,8 @@ def cleanup_moissi(file_name):
         source_projects = os.getcwd() + '\\' + file_name
 
     source_projects = pd.read_csv(source_projects)
-
-    removeAttributes = ['Project Name', 'Language', 'Main Link', 'Source', 'Type', 'Testing', 'Active', 'Email', 'Name', 'Timezones', 'Opened Issues', 'Active years']
-    extraAttributesToBeKept = ['Project Github Link', 'Sanity_passed']
-
-
-    #Input cleanup
-    input_df = source_projects
-    #input_df['active_since'] = input_df['Active years'].map(lambda x: 2019-x+1)
-    input_df = input_df.drop(removeAttributes, axis=1)
-    input_df = input_df[input_df['Sanity_passed'].map(lambda x: (str(x) == 'yes' or str(x) == 'Yes'))]
-    input_df = input_df.drop(['Sanity_passed'], axis=1)
-    input_df['Type'] = 'MoISSI'
-    return input_df
+    source_projects['Type'] = 'MoISSI'
+    return source_projects
 
 def cleanup_se(file_name):
     if platform.system() == 'Darwin' or platform.system() == 'Linux':
@@ -43,19 +32,8 @@ def cleanup_se(file_name):
         source_projects = os.getcwd() + '\\' + file_name
 
     source_projects = pd.read_csv(source_projects)
-
-    #removeAttributes = ['Project Name', 'Language', 'Main Link', 'Source', 'Type', 'Testing', 'Active', 'Email', 'Name', 'Timezones', 'Opened Issues', 'active_since', 'Active years']
-    extraAttributesToBeKept = ['Project Github Link']
-
-
-    #Input cleanup
-    input_df = source_projects
-    #input_df['active_since'] = input_df['Active years'].map(lambda x: 2019-x+1)
-    #input_df = input_df.drop(removeAttributes, axis=1)
-    #input_df = input_df[input_df['Sanity_passed'].map(lambda x: (str(x) == 'yes' or str(x) == 'Yes'))]
-    #input_df = input_df.drop(['Sanity_passed'], axis=1)
-    input_df['Type'] = 'SE'
-    return input_df
+    source_projects['Type'] = 'SE'
+    return source_projects
 
 
 
@@ -67,7 +45,7 @@ def getKGraph():
     print(se_df.shape[0])
     print("MoISSI count:")
     print(mossi_df.shape[0])
-    extraAttributesToBeKept = ['Project Github Link', 'Type']
+    extraAttributesToBeKept = ['Project Name','Project Github Link', 'Type']
 
     combined_df = pd.concat([mossi_df, se_df], axis=0)
     combined_df.reset_index(inplace=True, drop=True)

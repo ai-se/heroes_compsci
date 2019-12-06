@@ -17,6 +17,8 @@ import re
 import networkx as nx
 import platform
 from os.path import dirname as up
+import operator
+from datetime import datetime
 
 class git2data(object):
     
@@ -117,3 +119,50 @@ class git2data(object):
         user_data.to_pickle(self.data_path + self.repo_name + '_user.pkl')
         self.git_repo.repo_remove()
         print(self.repo_name,"Repo Done")
+
+    def get_additional_data(self):
+        # Commits
+        self.git_commits = self.git_repo.get_commits(extra_details = True)
+        commit_data = pd.DataFrame(self.git_commits, columns=['commit_number', 'message', 'parent','buggy', 'commit_time'])
+        commit_data.to_pickle(self.data_path + self.repo_name + '_commit.pkl')
+
+        # Issues
+        self.git_issues = self.git_client.get_issues(url_type = 'issues',url_details = '',extra_details=True)
+        issue_data = pd.DataFrame(self.git_issues, columns = ['Issue_number','user_logon','author_type','Desc','title','lables', 'state','is_issue'])
+        #issue_data.drop(['user_logon', 'Desc'], axis=1, inplace=True)
+        issue_data.to_pickle(self.data_path + self.repo_name + '_issue.pkl')
+
+        #Create date
+        github_repo = self.git_client.get_github_repo()
+        create_date = datetime.strptime(github_repo['created_at'], '%Y-%m-%dT%H:%M:%SZ')
+
+        #Releases
+        git_releases = self.git_client.get_releases(url_type = 'releases', url_details = '')
+        release_data = pd.DataFrame(git_releases, columns = ['Release_id'])
+        #release_data.to_pickle(self.data_path + self.repo_name + '_release.pkl')
+
+        #Tags
+        git_tags_count = self.git_client.get_list_count(url_type = 'tags', url_details = '')
+
+        #Stars
+        #self.git_stars = len(self.git_client.get_list_details(url_type = 'stargazers', url_details = ''))
+        git_stars = github_repo['stargazers_count']
+
+        #Forks
+        #self.git_forks_count = len(self.git_client.get_list_details(url_type = 'forks', url_details = ''))
+        git_forks_count = github_repo['forks_count']
+
+        #Watchers
+        #self.git_watchers_count = len(self.git_client.get_list_details(url_type = 'subscribers', url_details = ''))
+        git_watchers_count = github_repo['subscribers_count']
+
+        #Language
+        #lang = self.git_client.get_languages(url_type = 'languages', url_details = '')
+        #self.max_language = max(lang.items(), key = operator.itemgetter(1))[0]
+        max_language = github_repo['language']
+
+        print(self.repo_name, "Repo Done")
+
+        return commit_data,issue_data,create_date,release_data,git_stars,git_forks_count,git_watchers_count,max_language,git_tags_count
+
+
