@@ -1,0 +1,60 @@
+Project Name,Project Github Link,access_token,repo_owner,repo_name,source_type,git_url,api_base_url,num_dev
+trellis ,https://github.com/trellis-ldp/trellis,bcddf7453cb063663c3a3fab081ff0e747b2758b,trellis-ldp,trellis,github_repo,git://github.com/trellis-ldp/trellis.git,http://api.github.com,3.0
+abaco,https://github.com/TACC/abaco,bcddf7453cb063663c3a3fab081ff0e747b2758b,TACC,abaco,github_repo,git://github.com/TACC/abaco.git,http://api.github.com,7.0
+NDS Lab Workbench,https://github.com/nds-org/ndslabs,bcddf7453cb063663c3a3fab081ff0e747b2758b,nds-org,ndslabs,github_repo,git://github.com/nds-org/ndslabs.git,http://api.github.com,7.0
+PCMSolver,https://github.com/PCMSolver/pcmsolver,bcddf7453cb063663c3a3fab081ff0e747b2758b,PCMSolver,pcmsolver,github_repo,git://github.com/PCMSolver/pcmsolver.git,http://api.github.com,8.0
+yank,https://github.com/choderalab/yank,bcddf7453cb063663c3a3fab081ff0e747b2758b,choderalab,yank,github_repo,git://github.com/choderalab/yank.git,http://api.github.com,8.0
+openforcefield,https://github.com/openforcefield/openforcefield,bcddf7453cb063663c3a3fab081ff0e747b2758b,openforcefield,openforcefield,github_repo,git://github.com/openforcefield/openforcefield.git,http://api.github.com,8.0
+signac,https://bitbucket.org/glotzer/signac/issues,bcddf7453cb063663c3a3fab081ff0e747b2758b,?,?,?,?,http://api.github.com,8.0
+signac-flow,https://bitbucket.org/glotzer/signac-flow,bcddf7453cb063663c3a3fab081ff0e747b2758b,?,?,?,?,http://api.github.com,8.0
+learnsphere,https://github.com/LearnSphere/WorkflowComponents,bcddf7453cb063663c3a3fab081ff0e747b2758b,LearnSphere,WorkflowComponents,github_repo,git://github.com/LearnSphere/WorkflowComponents.git,http://api.github.com,9.0
+forcebalance,https://github.com/leeping/forcebalance,bcddf7453cb063663c3a3fab081ff0e747b2758b,leeping,forcebalance,github_repo,git://github.com/leeping/forcebalance.git,http://api.github.com,10.0
+openmmtools,https://github.com/choderalab/openmmtools,bcddf7453cb063663c3a3fab081ff0e747b2758b,choderalab,openmmtools,github_repo,git://github.com/choderalab/openmmtools.git,http://api.github.com,10.0
+foyer,https://github.com/mosdef-hub/foyer,bcddf7453cb063663c3a3fab081ff0e747b2758b,mosdef-hub,foyer,github_repo,git://github.com/mosdef-hub/foyer.git,http://api.github.com,10.0
+OpenMX,https://github.com/OpenMx/OpenMx,bcddf7453cb063663c3a3fab081ff0e747b2758b,OpenMx,OpenMx,github_repo,git://github.com/OpenMx/OpenMx.git,http://api.github.com,11.0
+quantum_package,http://github.com/LCPQ/quantum_package,bcddf7453cb063663c3a3fab081ff0e747b2758b,LCPQ,quantum_package,github_repo,http://github.com/LCPQ/quantum_package.git,http://api.github.com,11.0
+parsl,https://github.com/Parsl/parsl,bcddf7453cb063663c3a3fab081ff0e747b2758b,Parsl,parsl,github_repo,git://github.com/Parsl/parsl.git,http://api.github.com,11.0
+TauDEM,https://github.com/dtarb/TauDEM,bcddf7453cb063663c3a3fab081ff0e747b2758b,dtarb,TauDEM,github_repo,git://github.com/dtarb/TauDEM.git,http://api.github.com,11.0
+orca,https://github.com/RENCI-NRIG/orca5,bcddf7453cb063663c3a3fab081ff0e747b2758b,RENCI-NRIG,orca5,github_repo,git://github.com/RENCI-NRIG/orca5.git,http://api.github.com,11.0
+xenon,https://github.com/NLeSC/Xenon,bcddf7453cb063663c3a3fab081ff0e747b2758b,NLeSC,Xenon,github_repo,git://github.com/NLeSC/Xenon.git,http://api.github.com,11.0
+ACEMD,https://github.com/Acellera/htmd,bcddf7453cb063663c3a3fab081ff0e747b2758b,Acellera,htmd,github_repo,git://github.com/Acellera/htmd.git,http://api.github.com,12.0
+AMBER,https://github.com/Amber-MD/cpptraj,bcddf7453cb063663c3a3fab081ff0e747b2758b,Amber-MD,cpptraj,github_repo,git://github.com/Amber-MD/cpptraj.git,http://api.github.com,12.0
+MPQC,https://github.com/ValeevGroup/mpqc,bcddf7453cb063663c3a3fab081ff0e747b2758b,ValeevGroup,mpqc,github_repo,git://github.com/ValeevGroup/mpqc.git,http://api.github.com,12.0
+GooFit,https://github.com/GooFit/GooFit,bcddf7453cb063663c3a3fab081ff0e747b2758b,GooFit,GooFit,github_repo,git://github.com/GooFit/GooFit.git,http://api.github.com,12.0
+tripal,https://github.com/tripal/tripal,bcddf7453cb063663c3a3fab081ff0e747b2758b,tripal,tripal,github_repo,git://github.com/tripal/tripal.git,http://api.github.com,13.0
+radical-pilot,https://github.com/radical-cybertools/radical.pilot,bcddf7453cb063663c3a3fab081ff0e747b2758b,radical-cybertools,radical.pilot,github_repo,git://github.com/radical-cybertools/radical.pilot.git,http://api.github.com,17.0
+SCIRun,https://github.com/SCIInstitute/SCIRun,bcddf7453cb063663c3a3fab081ff0e747b2758b,SCIInstitute,SCIRun,github_repo,git://github.com/SCIInstitute/SCIRun.git,http://api.github.com,18.0
+changa,https://github.com/N-BodyShop/changa,bcddf7453cb063663c3a3fab081ff0e747b2758b,N-BodyShop,changa,github_repo,git://github.com/N-BodyShop/changa.git,http://api.github.com,18.0
+ABINIT,https://github.com/abinit/abinit,bcddf7453cb063663c3a3fab081ff0e747b2758b,abinit,abinit,github_repo,git://github.com/abinit/abinit.git,http://api.github.com,19.0
+APBS,https://github.com/Electrostatics/apbs-pdb2pqr,bcddf7453cb063663c3a3fab081ff0e747b2758b,Electrostatics,apbs-pdb2pqr,github_repo,git://github.com/Electrostatics/apbs-pdb2pqr.git,http://api.github.com,19.0
+BLIS,https://github.com/flame/blis,bcddf7453cb063663c3a3fab081ff0e747b2758b,flame,blis,github_repo,git://github.com/flame/blis.git,http://api.github.com,20.0
+cyclus,https://github.com/cyclus/cyclus,bcddf7453cb063663c3a3fab081ff0e747b2758b,cyclus,cyclus,github_repo,git://github.com/cyclus/cyclus.git,http://api.github.com,20.0
+mast,https://github.com/uw-cmg/MAST,bcddf7453cb063663c3a3fab081ff0e747b2758b,uw-cmg,MAST,github_repo,git://github.com/uw-cmg/MAST.git,http://api.github.com,22.0
+keplerproject,https://github.com/keplerproject/luafilesystem,bcddf7453cb063663c3a3fab081ff0e747b2758b,keplerproject,luafilesystem,github_repo,git://github.com/keplerproject/luafilesystem.git,http://api.github.com,22.0
+PLUMED,https://github.com/plumed/plumed2,bcddf7453cb063663c3a3fab081ff0e747b2758b,plumed,plumed2,github_repo,git://github.com/plumed/plumed2.git,http://api.github.com,23.0
+clowder,https://github.com/ncsa/clowder,bcddf7453cb063663c3a3fab081ff0e747b2758b,ncsa,clowder,github_repo,git://github.com/ncsa/clowder.git,http://api.github.com,28.0
+MOLCAS,https://gitlab.com/Molcas/OpenMolcas,bcddf7453cb063663c3a3fab081ff0e747b2758b,?,?,?,?,http://api.github.com,29.0
+NWChem,https://github.com/nwchemgit/nwchem,bcddf7453cb063663c3a3fab081ff0e747b2758b,nwchemgit,nwchem,github_repo,git://github.com/nwchemgit/nwchem.git,http://api.github.com,29.0
+hubzero,https://github.com/hubzero/hubzero-cms,bcddf7453cb063663c3a3fab081ff0e747b2758b,hubzero,hubzero-cms,github_repo,git://github.com/hubzero/hubzero-cms.git,http://api.github.com,29.0
+hydroshare,https://github.com/hydroshare/hydroshare,bcddf7453cb063663c3a3fab081ff0e747b2758b,hydroshare,hydroshare,github_repo,git://github.com/hydroshare/hydroshare.git,http://api.github.com,30.0
+MADNESS,https://github.com/m-a-d-n-e-s-s/madness,bcddf7453cb063663c3a3fab081ff0e747b2758b,m-a-d-n-e-s-s,madness,github_repo,git://github.com/m-a-d-n-e-s-s/madness.git,http://api.github.com,31.0
+metpy,https://github.com/Unidata/MetPy,bcddf7453cb063663c3a3fab081ff0e747b2758b,Unidata,MetPy,github_repo,git://github.com/Unidata/MetPy.git,http://api.github.com,33.0
+Luigi ,https://github.com/spotify/luigi,bcddf7453cb063663c3a3fab081ff0e747b2758b,spotify,luigi,github_repo,git://github.com/spotify/luigi.git,http://api.github.com,35.0
+HOOMD-blue,https://bitbucket.org/glotzer/hoomd-blue,bcddf7453cb063663c3a3fab081ff0e747b2758b,?,?,?,?,http://api.github.com,36.0
+pyscf,https://github.com/openforcefield/openforcefield,bcddf7453cb063663c3a3fab081ff0e747b2758b,openforcefield,openforcefield,github_repo,git://github.com/openforcefield/openforcefield.git,http://api.github.com,36.0
+irods,https://github.com/irods/irods,bcddf7453cb063663c3a3fab081ff0e747b2758b,irods,irods,github_repo,git://github.com/irods/irods.git,http://api.github.com,36.0
+OpenMM,https://github.com/pandegroup/openmm,bcddf7453cb063663c3a3fab081ff0e747b2758b,pandegroup,openmm,github_repo,git://github.com/pandegroup/openmm.git,http://api.github.com,38.0
+cctools,https://github.com/cooperative-computing-lab/cctools,bcddf7453cb063663c3a3fab081ff0e747b2758b,cooperative-computing-lab,cctools,github_repo,git://github.com/cooperative-computing-lab/cctools.git,http://api.github.com,43.0
+RMG-Py,https://github.com/ReactionMechanismGenerator/RMG-Py,bcddf7453cb063663c3a3fab081ff0e747b2758b,ReactionMechanismGenerator,RMG-Py,github_repo,git://github.com/ReactionMechanismGenerator/RMG-Py.git,http://api.github.com,43.0
+mdtraj,https://github.com/mdtraj/mdtraj,bcddf7453cb063663c3a3fab081ff0e747b2758b,mdtraj,mdtraj,github_repo,git://github.com/mdtraj/mdtraj.git,http://api.github.com,45.0
+LIBMESH,https://github.com/libMesh/libmesh,bcddf7453cb063663c3a3fab081ff0e747b2758b,libMesh,libmesh,github_repo,git://github.com/libMesh/libmesh.git,http://api.github.com,56.0
+LAMMPS,https://github.com/lammps/lammps,bcddf7453cb063663c3a3fab081ff0e747b2758b,lammps,lammps,github_repo,git://github.com/lammps/lammps.git,http://api.github.com,61.0
+mdanalysis,https://github.com/MDAnalysis/mdanalysis,bcddf7453cb063663c3a3fab081ff0e747b2758b,MDAnalysis,mdanalysis,github_repo,git://github.com/MDAnalysis/mdanalysis.git,http://api.github.com,71.0
+Psi4,https://github.com/psi4/psi4,bcddf7453cb063663c3a3fab081ff0e747b2758b,psi4,psi4,github_repo,git://github.com/psi4/psi4.git,http://api.github.com,79.0
+yt,https://github.com/yt-project/yt,bcddf7453cb063663c3a3fab081ff0e747b2758b,yt-project,yt,github_repo,git://github.com/yt-project/yt.git,http://api.github.com,93.0
+pymatgen,https://github.com/materialsproject/pymatgen,bcddf7453cb063663c3a3fab081ff0e747b2758b,materialsproject,pymatgen,github_repo,git://github.com/materialsproject/pymatgen.git,http://api.github.com,107.0
+dealii,https://github.com/dealii/dealii,bcddf7453cb063663c3a3fab081ff0e747b2758b,dealii,dealii,github_repo,git://github.com/dealii/dealii.git,http://api.github.com,120.0
+OpenMPI,https://github.com/open-mpi/ompi,bcddf7453cb063663c3a3fab081ff0e747b2758b,open-mpi,ompi,github_repo,git://github.com/open-mpi/ompi.git,http://api.github.com,147.0
+TRILINOS,https://github.com/trilinos/Trilinos,bcddf7453cb063663c3a3fab081ff0e747b2758b,trilinos,Trilinos,github_repo,git://github.com/trilinos/Trilinos.git,http://api.github.com,179.0
+Use Galaxy,https://github.com/galaxyproject/galaxy,bcddf7453cb063663c3a3fab081ff0e747b2758b,galaxyproject,galaxy,github_repo,git://github.com/galaxyproject/galaxy.git,http://api.github.com,188.0
+elasticsearch,https://github.com/elastic/elasticsearch,bcddf7453cb063663c3a3fab081ff0e747b2758b,elastic,elasticsearch,github_repo,git://github.com/elastic/elasticsearch.git,http://api.github.com,1050.0

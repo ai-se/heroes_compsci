@@ -1,0 +1,60 @@
+Project Name,git_url,Developers,Commit #,Closed Issues,Releases,Tags,Open Issues,Duration,Stars,Forks,Watchers,Language,Latest commit year
+trellis ,git://github.com/trellis-ldp/trellis.git,3.0,1479,302,14,14,9,153,55,14,9,Java,2019
+abaco,git://github.com/TACC/abaco.git,7.0,1444,38,4,13,19,228,18,10,13,Python,2019
+NDS Lab Workbench,git://github.com/nds-org/ndslabs.git,7.0,1308,30,17,18,23,125,5,8,5,JavaScript,2018
+PCMSolver,git://github.com/PCMSolver/pcmsolver.git,8.0,1859,58,23,18,32,273,16,13,4,C++,2019
+yank,git://github.com/choderalab/yank.git,8.0,3075,495,47,47,170,319,59,43,18,Python,2019
+openforcefield,git://github.com/openforcefield/openforcefield.git,8.0,2683,152,14,15,158,139,72,21,23,Jupyter Notebook,2019
+signac,?,8.0,?,?,?,?,?,?,?,?,?,?,?
+signac-flow,?,8.0,?,?,?,?,?,?,?,?,?,?,?
+learnsphere,git://github.com/LearnSphere/WorkflowComponents.git,9.0,909,81,0,1,12,184,15,9,29,TSQL,2019
+forcebalance,git://github.com/leeping/forcebalance.git,10.0,1999,34,7,11,20,334,66,45,16,Python,2019
+openmmtools,git://github.com/choderalab/openmmtools.git,10.0,1548,83,38,38,118,267,59,29,27,Python,2019
+foyer,git://github.com/mosdef-hub/foyer.git,10.0,638,60,19,20,50,242,34,39,15,Python,2019
+OpenMX,git://github.com/OpenMx/OpenMx.git,11.0,8269,173,0,89,78,393,42,19,8,R,2019
+quantum_package,http://github.com/LCPQ/quantum_package.git,11.0,2730,93,5,5,0,296,27,37,16,Fortran,2019
+parsl,git://github.com/Parsl/parsl.git,11.0,3280,475,0,33,250,163,188,47,29,Python,2019
+TauDEM,git://github.com/dtarb/TauDEM.git,11.0,299,99,9,10,54,351,124,69,32,C++,2019
+orca,git://github.com/RENCI-NRIG/orca5.git,11.0,1313,138,23,28,23,238,2,1,9,Java,2019
+xenon,git://github.com/NLeSC/Xenon.git,11.0,2452,370,24,26,22,348,24,13,7,Java,2019
+ACEMD,git://github.com/Acellera/htmd.git,12.0,4396,566,5,175,24,218,115,42,20,Rich Text Format,2019
+AMBER,git://github.com/Amber-MD/cpptraj.git,12.0,9250,264,3,3,47,260,38,29,9,C++,2019
+MPQC,git://github.com/ValeevGroup/mpqc.git,12.0,9854,45,0,59,2,266,35,18,23,C++,2018
+GooFit,git://github.com/GooFit/GooFit.git,12.0,1588,44,12,15,16,349,78,28,20,C++,2019
+tripal,git://github.com/tripal/tripal.git,13.0,5511,580,4,23,53,220,34,35,14,PLpgSQL,2019
+radical-pilot,git://github.com/radical-cybertools/radical.pilot.git,17.0,6905,1300,1,180,142,334,32,13,16,Python,2019
+SCIRun,git://github.com/SCIInstitute/SCIRun.git,18.0,10119,1274,43,86,338,407,59,51,17,C++,2019
+changa,git://github.com/N-BodyShop/changa.git,18.0,2716,15,0,9,11,247,23,16,15,C++,2019
+ABINIT,git://github.com/abinit/abinit.git,19.0,6793,11,3,16,11,82,97,41,14,Fortran,2018
+APBS,git://github.com/Electrostatics/apbs-pdb2pqr.git,19.0,6711,298,7,8,215,310,84,57,25,Python,2019
+BLIS,git://github.com/flame/blis.git,20.0,1807,172,0,31,60,306,616,134,62,C,2019
+cyclus,git://github.com/cyclus/cyclus.git,20.0,6809,557,40,48,95,409,42,51,14,C++,2019
+mast,git://github.com/uw-cmg/MAST.git,22.0,5050,388,13,69,83,251,10,5,10,Python,2018
+keplerproject,git://github.com/keplerproject/luafilesystem.git,22.0,330,53,0,18,25,532,519,197,61,C,2019
+PLUMED,git://github.com/plumed/plumed2.git,23.0,9705,304,28,61,53,343,130,138,37,C++,2019
+clowder,git://github.com/ncsa/clowder.git,28.0,6942,6,17,38,6,180,22,9,8,JavaScript,2019
+MOLCAS,?,29.0,?,?,?,?,?,?,?,?,?,?,?
+NWChem,git://github.com/nwchemgit/nwchem.git,29.0,27012,99,6,8,27,106,142,77,38,Fortran,2019
+hubzero,git://github.com/hubzero/hubzero-cms.git,29.0,21394,22,9,121,26,314,33,44,15,PHP,2019
+hydroshare,git://github.com/hydroshare/hydroshare.git,30.0,12151,1794,78,82,435,270,95,20,45,Python,2019
+MADNESS,git://github.com/m-a-d-n-e-s-s/madness.git,31.0,5460,128,1,3,58,289,88,41,31,C++,2019
+metpy,git://github.com/Unidata/MetPy.git,33.0,2658,439,22,24,173,458,506,222,57,Python,2019
+Luigi ,git://github.com/spotify/luigi.git,35.0,3854,756,43,52,42,376,12593,2062,505,Python,2019
+HOOMD-blue,?,36.0,?,?,?,?,?,?,?,?,?,?,?
+pyscf,git://github.com/openforcefield/openforcefield.git,36.0,2683,152,14,15,158,139,72,21,23,Jupyter Notebook,2019
+irods,git://github.com/irods/irods.git,36.0,6441,3499,19,38,643,314,281,93,47,C++,2019
+OpenMM,git://github.com/pandegroup/openmm.git,38.0,6241,871,18,27,322,341,459,244,72,C++,2019
+cctools,git://github.com/cooperative-computing-lab/cctools.git,43.0,9482,702,18,187,57,351,92,86,19,C,2019
+RMG-Py,git://github.com/ReactionMechanismGenerator/RMG-Py.git,43.0,9014,572,20,23,283,529,150,130,52,Python,2019
+mdtraj,git://github.com/mdtraj/mdtraj.git,45.0,3111,738,18,23,31,369,253,164,45,C,2019
+LIBMESH,git://github.com/libMesh/libmesh.git,56.0,18808,399,15,68,160,376,360,196,56,C,2019
+LAMMPS,git://github.com/lammps/lammps.git,61.0,18907,384,43,117,59,329,660,780,101,C++,2019
+mdanalysis,git://github.com/MDAnalysis/mdanalysis.git,71.0,5473,1023,15,50,206,243,360,199,37,Python,2019
+Psi4,git://github.com/psi4/psi4.git,79.0,13806,598,6,17,119,348,385,247,60,C++,2019
+yt,git://github.com/yt-project/yt.git,93.0,25080,1467,0,39,186,137,212,144,23,Python,2019
+pymatgen,git://github.com/materialsproject/pymatgen.git,107.0,18253,434,167,265,85,423,498,434,117,Python,2019
+dealii,git://github.com/dealii/dealii.git,120.0,46370,1613,14,31,389,281,558,426,75,C++,2019
+OpenMPI,git://github.com/open-mpi/ompi.git,147.0,30214,1529,19,134,410,272,922,491,126,C,2019
+TRILINOS,git://github.com/trilinos/Trilinos.git,179.0,86574,2188,1,146,1047,211,470,286,112,C++,2019
+Use Galaxy,git://github.com/galaxyproject/galaxy.git,188.0,43627,1877,0,55,1170,249,659,590,66,Python,2019
+elasticsearch,git://github.com/elastic/elasticsearch.git,1050.0,49514,13546,14,263,1998,512,45843,15490,2798,Java,2019
