@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
 
-xAttributes = ['Commit #','Closed Issues','Releases','Tags','Stars']
+xAttributes = ['Commit #','Closed Issues','Releases','Tags','Duration', 'Open Issues']
 
 def normalize(x):
     mn = x.min()
@@ -16,7 +16,7 @@ def normalize(x):
     return x.map(lambda z: (z - mn)/diff)
 
 def getKGraph(i):
-    extraAttributesToBeKept = ['Developers', 'Project Name', 'git_url', 'Type', 'Language', 'Forks', 'Watchers', 'Latest commit year', 'Duration', 'Open Issues']
+    extraAttributesToBeKept = ['Developers', 'Project Name', 'git_url', 'Type', 'Language', 'Forks', 'Watchers', 'Latest commit year', 'Stars']
 
     if platform.system() == 'Darwin' or platform.system() == 'Linux':
         source_projects = os.getcwd() + '/Combined/' + 'combined_data_' + str(i) + '.csv'
@@ -46,4 +46,4 @@ def getKGraph(i):
     plt.xlabel('K values')
     plt.show()
 
-getKGraph(8)
+getKGraph(9)

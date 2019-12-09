@@ -6,8 +6,8 @@ import pandas as pd
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
-#xAttributes = ['Commit #','Closed Issues','Releases','Tags','Open Issues','Duration']
-xAttributes = ['Commit #','Closed Issues','Releases','Tags','Stars']
+xAttributes = ['Commit #','Closed Issues','Releases','Tags','Open Issues','Duration']
+#xAttributes = ['Commit #','Closed Issues','Releases','Tags','Stars']
 
 def normalize(x):
     mn = x.min()
@@ -38,8 +38,8 @@ def cleanup_se(file_name):
 
 
 def getKGraph(i):
-    extraAttributesToBeKept = ['Developers', 'Project Name', 'git_url', 'Type', 'Language', 'Forks', 'Watchers', 'Latest commit year', 'Duration', 'Open Issues']
-    #extraAttributesToBeKept = ['Developers', 'Project Name', 'git_url', 'Type', 'Language', 'Forks', 'Watchers', 'Latest commit year','Stars']
+    #extraAttributesToBeKept = ['Developers', 'Project Name', 'git_url', 'Type', 'Language', 'Forks', 'Watchers', 'Latest commit year', 'Duration', 'Open Issues']
+    extraAttributesToBeKept = ['Developers', 'Project Name', 'git_url', 'Type', 'Language', 'Forks', 'Watchers', 'Latest commit year','Stars']
 
     if platform.system() == 'Darwin' or platform.system() == 'Linux':
         source_projects = os.getcwd() + '/Combined/' + 'combined_data_' + str(i) + '.csv'
@@ -61,7 +61,7 @@ def getKGraph(i):
         xAttributesNorm.append(xLabel+'_norm')
 
     # Determined as per elbow analysis
-    desiredK = 9
+    desiredK = 8
     desired_clustering = KMeans(n_clusters=desiredK).fit(combined_df.drop(xAttributes + extraAttributesToBeKept, axis=1).dropna(axis=1))
     combined_df['cluster_no'] = desired_clustering.labels_
 
@@ -101,4 +101,4 @@ def getKGraph(i):
 
     #print(combined_df.drop(xAttributesNorm, axis=1).sort_values(by=['cluster_no']))
 
-getKGraph(8)
+getKGraph(9)
