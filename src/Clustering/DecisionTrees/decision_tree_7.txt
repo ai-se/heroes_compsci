@@ -29,6 +29,9 @@ Commit # > 1181
 |   |   Commit # <= 5511: SE (12.0/1.0)
 |   |   Commit # > 5511: MoISSI (6.0)
 
+Inference:-
+1. MoISSI projects have more commits, lesser duration and more closed issues
+
 Number of Leaves  : 	6
 
 Size of the tree : 	11

@@ -33,6 +33,9 @@ Commit # > 859
 |   |   |   |   Commit # > 3854: SE (2.0)
 |   |   Commit # > 6595: MoISSI (9.0/1.0)
 
+Inferences:-
+1. MoISSI projects have more commits, lesser duration and more releases
+
 Number of Leaves  : 	8
 
 Size of the tree : 	15

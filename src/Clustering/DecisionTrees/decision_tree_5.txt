@@ -25,6 +25,9 @@ Commit # > 1198
 |   |   Commit # <= 6441: SE (11.0/1.0)
 |   |   Commit # > 6441: MoISSI (5.0)
 
+Inference
+1. MoISSI projects have more commits and lesser duration.
+
 Number of Leaves  : 	4
 
 Size of the tree : 	7

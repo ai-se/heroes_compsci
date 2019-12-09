@@ -30,6 +30,11 @@ Commit # <= 2986
 |   Stars > 130: SE (48.0/3.0)
 Commit # > 2986: MoISSI (37.0)
 
+Inferences:-
+1. MoISSI projects have more commits, in general.
+2. SE projects with less commits are 'Starred' more times than comparable MoISSI.
+3. MoISSI projects with less commits have more 'Releases'
+
 Number of Leaves  : 	6
 
 Size of the tree : 	11
