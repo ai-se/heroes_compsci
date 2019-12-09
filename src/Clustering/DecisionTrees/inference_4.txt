@@ -1,0 +1,3 @@
+1. MoISSI projects have more commits, in general.
+2. SE projects with less commits are 'Starred' more times than comparable MoISSI.
+3. MoISSI projects with less commits have more 'Releases'
