@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     combined_data_11-weka.filters.unsupervised.attribute.Remove-R1-3,10-14
+Instances:    117
+Attributes:   7
+              Commit #
+              Closed Issues
+              Releases
+              Tags
+              Open Issues
+              Duration
+              Type
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Commit # <= 859: SE (44.0/3.0)
+Commit # > 859
+|   Duration <= 408
+|   |   Releases <= 2
+|   |   |   Duration <= 129: SE (2.0)
+|   |   |   Duration > 129: MoISSI (13.0/1.0)
+|   |   Releases > 2: MoISSI (37.0)
+|   Duration > 408
+|   |   Duration <= 468
+|   |   |   Releases <= 18: SE (12.0)
+|   |   |   Releases > 18
+|   |   |   |   Commit # <= 2452: SE (2.0)
+|   |   |   |   Commit # > 2452: MoISSI (4.0/1.0)
+|   |   Duration > 468: MoISSI (3.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         100               85.4701 %
+Incorrectly Classified Instances        17               14.5299 %
+Kappa statistic                          0.7093
+Mean absolute error                      0.1779
+Root mean squared error                  0.3688
+Relative absolute error                 35.5817 %
+Root relative squared error             73.7355 %
+Total Number of Instances              117     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.828    0.119    0.873      0.828    0.850      0.710    0.844     0.846     MoISSI
+                 0.881    0.172    0.839      0.881    0.860      0.710    0.844     0.776     SE
+Weighted Avg.    0.855    0.146    0.856      0.855    0.855      0.710    0.844     0.811     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 48 10 |  a = MoISSI
+  7 52 |  b = SE
+

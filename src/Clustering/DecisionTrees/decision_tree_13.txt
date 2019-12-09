@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     combined_data_13-weka.filters.unsupervised.attribute.Remove-R1-3,9-14
+Instances:    117
+Attributes:   6
+              Commit #
+              Closed Issues
+              Releases
+              Tags
+              Open Issues
+              Type
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Commit # <= 800: SE (48.0/3.0)
+Commit # > 800
+|   Commit # <= 2043
+|   |   Closed Issues <= 178
+|   |   |   Open Issues <= 14: SE (4.0/1.0)
+|   |   |   Open Issues > 14: MoISSI (11.0/1.0)
+|   |   Closed Issues > 178: SE (7.0/1.0)
+|   Commit # > 2043: MoISSI (47.0/4.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          95               81.1966 %
+Incorrectly Classified Instances        22               18.8034 %
+Kappa statistic                          0.6241
+Mean absolute error                      0.241 
+Root mean squared error                  0.391 
+Relative absolute error                 48.1994 %
+Root relative squared error             78.18   %
+Total Number of Instances              117     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.845    0.220    0.790      0.845    0.817      0.626    0.825     0.759     MoISSI
+                 0.780    0.155    0.836      0.780    0.807      0.626    0.825     0.782     SE
+Weighted Avg.    0.812    0.187    0.814      0.812    0.812      0.626    0.825     0.771     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 49  9 |  a = MoISSI
+ 13 46 |  b = SE
+
