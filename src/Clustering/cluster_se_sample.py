@@ -31,24 +31,14 @@ small_projects = source_projects[(source_projects['num_dev'] >= 8) & (source_pro
 medium_projects = source_projects[(source_projects['num_dev'] >= 15) & (source_projects['num_dev'] < 30)]
 large_projects = source_projects[source_projects['num_dev'] >= 30]
 
-small_sample = small_projects.sample(20)
-medium_sample = medium_projects.sample(20)
-large_sample = large_projects.sample(19)
-sample_projects = pd.concat([small_sample, medium_sample, large_sample], axis=0)
-sample_projects.reset_index(inplace=True, drop=True)
-#sample_projects['Developers'] = sample_projects['num_dev']
-#sample_projects['Commits #'] = [0]*sample_projects.shape[0]
-#sample_projects['Closed Issues'] = [0]*sample_projects.shape[0]
-#sample_projects['Releases'] = [0]*sample_projects.shape[0]
-#sample_projects['Open Issues'] = [0]*sample_projects.shape[0]
-#sample_projects['Duration'] = [0]*sample_projects.shape[0]
-#sample_projects['Stars'] = [0]*sample_projects.shape[0]
-#sample_projects['Forks'] = [0]*sample_projects.shape[0]
-#sample_projects['Watchers'] = [0]*sample_projects.shape[0]
-#sample_projects['Language'] = [0]*sample_projects.shape[0]
-#xAttributes = ['Developers', 'Commits #', 'Closed Issues', 'Releases', 'Tags', 'Open Issues', 'Duration', 'Stars', 'Forks', 'Watchers', 'Language', 'Latest commit year']
-#keepAttributes = ['git_url']
-#removeAttributes = ['repo_name', 'repo_owner', 'api_base_url', 'source_type', 'access_token', 'lang', 'heros_80', 'heros_85', 'heros_90', 'heros_95', 'num_dev']
-#sampe_projects = sample_projects.drop(removeAttributes, axis = 1).to_csv("SE_projects_3.csv", index=False)
-sample_projects.to_csv("SE_projects_3.csv", index=False)
-print(sample_projects)
+number_of_samples = 10
+
+for i in range(4,number_of_samples+4):
+    small_sample = small_projects.sample(20)
+    medium_sample = medium_projects.sample(20)
+    large_sample = large_projects.sample(19)
+    sample_projects = pd.concat([small_sample, medium_sample, large_sample], axis=0)
+    sample_projects.reset_index(inplace=True, drop=True)
+    file_name = 'SE_projects_' + str(i) + '.csv'
+    sample_projects.to_csv(file_name, index=False)
+    #print(sample_projects)
