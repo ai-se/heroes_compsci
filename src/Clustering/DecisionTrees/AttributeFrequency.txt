@@ -1,0 +1,7 @@
+Commit # = 10
+Duration = 7
+Releases = 6
+Closed Issues = 5
+Stars = 2
+Tags = 1
+Open Issues = 1
