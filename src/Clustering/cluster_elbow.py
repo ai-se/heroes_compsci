@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
 
-xAttributes = ['Developers', 'Commits #', 'Closed Issues', 'Releases']
+xAttributes = ['Commit #','Closed Issues','Releases','Tags','Open Issues','Duration']
 
 def normalize(x):
     mn = x.min()
@@ -15,58 +15,15 @@ def normalize(x):
     diff = mx - mn
     return x.map(lambda z: (z - mn)/diff)
 
-def cleanup_moissi(file_name):
+def getKGraph(i):
+    extraAttributesToBeKept = ['Developers', 'Project Name', 'git_url', 'Type', 'Language', 'Forks', 'Watchers', 'Latest commit year','Stars']
+
     if platform.system() == 'Darwin' or platform.system() == 'Linux':
-        source_projects = os.getcwd() + '/' + file_name
+        source_projects = os.getcwd() + '/Combined/' + 'combined_data_' + str(i) + '.csv'
     else:
-        source_projects = os.getcwd() + '\\' + file_name
+        source_projects = os.getcwd() + '\\Combined\\' + 'combined_data_' + str(i) + '.csv'
 
-    source_projects = pd.read_csv(source_projects)
-
-    removeAttributes = ['Project Name', 'Language', 'Main Link', 'Source', 'Type', 'Testing', 'Active', 'Email', 'Name', 'Timezones', 'Opened Issues', 'Active years']
-    extraAttributesToBeKept = ['Project Github Link', 'Sanity_passed']
-
-
-    #Input cleanup
-    input_df = source_projects
-    #input_df['active_since'] = input_df['Active years'].map(lambda x: 2019-x+1)
-    input_df = input_df.drop(removeAttributes, axis=1)
-    input_df = input_df[input_df['Sanity_passed'].map(lambda x: (str(x) == 'yes' or str(x) == 'Yes'))]
-    input_df = input_df.drop(['Sanity_passed'], axis=1)
-    input_df['Type'] = 'MoISSI'
-    return input_df
-
-def cleanup_se(file_name):
-    if platform.system() == 'Darwin' or platform.system() == 'Linux':
-        source_projects = os.getcwd() + '/' + file_name
-    else:
-        source_projects = os.getcwd() + '\\' + file_name
-
-    source_projects = pd.read_csv(source_projects)
-
-    #removeAttributes = ['Project Name', 'Language', 'Main Link', 'Source', 'Type', 'Testing', 'Active', 'Email', 'Name', 'Timezones', 'Opened Issues', 'active_since', 'Active years']
-    extraAttributesToBeKept = ['Project Github Link']
-
-
-    #Input cleanup
-    input_df = source_projects
-    #input_df['active_since'] = input_df['Active years'].map(lambda x: 2019-x+1)
-    #input_df = input_df.drop(removeAttributes, axis=1)
-    #input_df = input_df[input_df['Sanity_passed'].map(lambda x: (str(x) == 'yes' or str(x) == 'Yes'))]
-    #input_df = input_df.drop(['Sanity_passed'], axis=1)
-    input_df['Type'] = 'SE'
-    return input_df
-
-
-
-def getKGraph():
-    mossi_df = cleanup_moissi('MolSSI Projects DB - top_projects.csv')
-    se_df = cleanup_se('se_projects_with_other_attributes.csv')
-    extraAttributesToBeKept = ['Project Github Link', 'Type']
-
-    combined_df = pd.concat([mossi_df, se_df], axis=0)
-    combined_df.reset_index(inplace=True, drop=True)
-
+    combined_df = pd.read_csv(source_projects)
     print(combined_df)
 
     xAttributesNorm = []
@@ -89,6 +46,4 @@ def getKGraph():
     plt.xlabel('K values')
     plt.show()
 
-#getKGraph('MolSSI Projects DB - top_projects.csv')
-#getKGraph('se_projects_with_other_attributes.csv')
-getKGraph()
+getKGraph(6)

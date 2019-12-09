@@ -1,0 +1,24 @@
+SE count: 59
+MoISSI count: 58
+INF = Only MoISSI cluster, 0.0 = Only SE cluster
+Cluster no 0: 4.0  (cluster count = 10)
+Cluster no 1: 0.2413793103448276  (cluster count = 36)
+Cluster no 2: 1.6  (cluster count = 26)
+Cluster no 4: 1.0  (cluster count = 2)
+Cluster no 6: 5.0  (cluster count = 6)
+Cluster no 7: 1.0  (cluster count = 8)
+Cluster no 8: 1.0  (cluster count = 24)
+Cluster no 9: INF  (cluster count = 3)
+Following clusters are pruned due to small size: [3, 5]
+============================================
+Medians:
+            Commit #  Closed Issues  Releases   Tags  Open Issues  Duration
+cluster_no                                                                 
+0             6341.0          656.5      39.0   50.0        176.0     359.5
+1              372.5           92.5       0.0   17.5         25.5     409.0
+2             1496.0           71.5       2.5   10.5         27.0     266.5
+4            12424.0         2703.0     168.5  222.5        381.0     434.0
+6             8193.5          475.0      13.5  161.5         44.5     331.5
+7             8641.5          311.5       2.5   68.0         73.5     436.0
+8             1113.5           40.5       0.0    8.5         19.0     151.5
+9            43627.0         1613.0      14.0   55.0        410.0     272.0

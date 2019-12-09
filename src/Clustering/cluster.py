@@ -6,8 +6,7 @@ import pandas as pd
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
-
-xAttributes = ['Developers', 'Commits #', 'Closed Issues', 'Releases']
+xAttributes = ['Commit #','Closed Issues','Releases','Tags','Open Issues','Duration']
 
 def normalize(x):
     mn = x.min()
@@ -37,20 +36,20 @@ def cleanup_se(file_name):
 
 
 
-def getKGraph():
-    mossi_df = cleanup_moissi('MolSSI Projects DB - top_projects.csv')
-    se_df = cleanup_se('se_projects_with_other_attributes.csv')
+def getKGraph(i):
+    extraAttributesToBeKept = ['Developers', 'Project Name', 'git_url', 'Type', 'Language', 'Forks', 'Watchers', 'Latest commit year','Stars']
 
-    print("SE count:")
-    print(se_df.shape[0])
-    print("MoISSI count:")
-    print(mossi_df.shape[0])
-    extraAttributesToBeKept = ['Project Name','Project Github Link', 'Type']
+    if platform.system() == 'Darwin' or platform.system() == 'Linux':
+        source_projects = os.getcwd() + '/Combined/' + 'combined_data_' + str(i) + '.csv'
+    else:
+        source_projects = os.getcwd() + '\\Combined\\' + 'combined_data_' + str(i) + '.csv'
 
-    combined_df = pd.concat([mossi_df, se_df], axis=0)
-    combined_df.reset_index(inplace=True, drop=True)
+    combined_df = pd.read_csv(source_projects)
 
-    print(combined_df)
+    se_count = combined_df[combined_df['Type'] == 'SE'].shape[0]
+    moissi_count = combined_df[combined_df['Type'] == 'MoISSI'].shape[0]
+    print("SE count: " + str(se_count))
+    print("MoISSI count: " + str(moissi_count))
 
     xAttributesNorm = []
 
@@ -60,7 +59,7 @@ def getKGraph():
         xAttributesNorm.append(xLabel+'_norm')
 
     # Determined as per elbow analysis
-    desiredK = 8
+    desiredK = 10
     desired_clustering = KMeans(n_clusters=desiredK).fit(combined_df.drop(xAttributes + extraAttributesToBeKept, axis=1).dropna(axis=1))
     combined_df['cluster_no'] = desired_clustering.labels_
 
@@ -76,17 +75,28 @@ def getKGraph():
             cnt = m_count_map.get(cluster_no, 0)
             m_count_map[cluster_no] = cnt+1
 
-    print("MoISSI / SE ratios: (ideal count ~ " + str(mossi_df.shape[0]/se_df.shape[0]) + ")")
+    #print("MoISSI / SE ratios: (ideal count ~ " + str(moissi_count/se_count) + ")")
+    pruned_clusters = []
     print("INF = Only MoISSI cluster, 0.0 = Only SE cluster")
     for cluster_no in range(0,desiredK):
         m_val = m_count_map.get(cluster_no, 0)
         se_val = se_count_map.get(cluster_no, 0)
         ratio = (m_val / se_val) if se_val != 0 else 'INF'
-        print("Cluster no " + str(cluster_no) + ": " + str(ratio) + "  (cluster count = " + str(m_val+se_val) + ")")
+        total_val = m_val + se_val
+        if (total_val != 1):
+            print("Cluster no " + str(cluster_no) + ": " + str(ratio) + "  (cluster count = " + str(m_val+se_val) + ")")
+        else:
+            pruned_clusters.append(cluster_no)
 
-    something = combined_df.groupby(combined_df['cluster_no'])[xAttributes].median()
+    print("Following clusters are pruned due to small size: " + str(pruned_clusters))
+
+
+    something = combined_df[~combined_df.cluster_no.isin(pruned_clusters)].groupby(combined_df['cluster_no'])[xAttributes].median()
+    #something = combined_df[(combined_df['cluster_no'] not in pruned_clusters)].groupby(combined_df['cluster_no'])[xAttributes].median()
+    print("============================================")
+    print("Medians:")
     print(something)
 
     #print(combined_df.drop(xAttributesNorm, axis=1).sort_values(by=['cluster_no']))
 
-getKGraph()
+getKGraph(6)

@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     combined_data_6-weka.filters.unsupervised.attribute.Remove-R1-3,10-14
+Instances:    117
+Attributes:   7
+              Commit #
+              Closed Issues
+              Releases
+              Tags
+              Open Issues
+              Duration
+              Type
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Commit # <= 859
+|   Releases <= 6: SE (44.0/1.0)
+|   Releases > 6
+|   |   Duration <= 376: MoISSI (2.0)
+|   |   Duration > 376: SE (3.0)
+Commit # > 859
+|   Duration <= 351: MoISSI (47.0/3.0)
+|   Duration > 351
+|   |   Commit # <= 6595
+|   |   |   Closed Issues <= 436: SE (7.0)
+|   |   |   Closed Issues > 436
+|   |   |   |   Commit # <= 3854: MoISSI (3.0)
+|   |   |   |   Commit # > 3854: SE (2.0)
+|   |   Commit # > 6595: MoISSI (9.0/1.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          94               80.3419 %
+Incorrectly Classified Instances        23               19.6581 %
+Kappa statistic                          0.6069
+Mean absolute error                      0.2252
+Root mean squared error                  0.4242
+Relative absolute error                 45.0361 %
+Root relative squared error             84.8321 %
+Total Number of Instances              117     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.810    0.203    0.797      0.810    0.803      0.607    0.775     0.690     MoISSI
+                 0.797    0.190    0.810      0.797    0.803      0.607    0.775     0.743     SE
+Weighted Avg.    0.803    0.196    0.804      0.803    0.803      0.607    0.775     0.717     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 47 11 |  a = MoISSI
+ 12 47 |  b = SE
+
