@@ -29,7 +29,7 @@ for file_index in range(starting_index, number_of_samples + starting_index):
 
     for i in range(project_list.shape[0]):
             try:
-                print("I am here")
+                print("I am here at " + str(i))
                 access_token = project_list.loc[i,'access_token']
                 repo_owner = project_list.loc[i,'repo_owner']
                 source_type = project_list.loc[i,'source_type']
