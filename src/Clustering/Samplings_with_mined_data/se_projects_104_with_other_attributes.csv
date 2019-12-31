@@ -1,0 +1,60 @@
+Project Name,git_url,Developers,Commit #,Closed Issues,Releases,Tags,Open Issues,Duration,Stars,Forks,Watchers,Language,Latest commit year
+Fire-Soft-Board-2,git://github.com/FSB/Fire-Soft-Board-2.git,14,397,123,0,5,42,96,17,4,4,PHP,2013
+pyotherside,git://github.com/thp/pyotherside.git,14,180,59,0,24,19,446,301,40,33,C++,2019
+solr-for-wordpress,git://github.com/mattweber/solr-for-wordpress.git,13,123,13,0,4,19,171,86,37,13,PHP,2014
+grails-coffeescript-resources,git://github.com/edvinasbartkus/grails-coffeescript-resources.git,11,41,10,0,0,12,91,21,11,3,Groovy,2013
+node-nikita,git://github.com/adaltas/node-nikita.git,13,2157,106,0,185,14,409,46,13,13,CoffeeScript,2019
+Project-Axeman,git://github.com/JustBuild/Project-Axeman.git,10,397,96,6,6,17,333,15,15,4,JavaScript,2018
+CV,git://github.com/aleator/CV.git,13,430,27,0,4,14,283,48,15,6,Haskell,2016
+oscar,git://github.com/oscar-stack/oscar.git,12,268,26,3,29,20,408,90,39,10,Ruby,2019
+linum-relative,git://github.com/coldnew/linum-relative.git,10,72,23,2,3,11,312,145,20,9,Emacs Lisp,2018
+php-webdriver,git://github.com/Element-34/php-webdriver.git,14,255,12,0,5,33,425,127,59,21,PHP,2019
+pyBurlyBot,git://github.com/Clam-/pyBurlyBot.git,8,276,41,0,0,34,435,4,2,4,Python,2019
+Scroller,git://github.com/DataTables/Scroller.git,14,215,36,0,20,15,445,72,57,9,JavaScript,2019
+akka-samples,git://github.com/akka/akka-samples.git,14,200,22,0,0,25,450,561,309,48,Scala,2019
+salad,git://github.com/salad/salad.git,8,258,12,0,1,13,178,119,30,13,Cucumber,2015
+tilelive-mapnik,git://github.com/mapbox/tilelive-mapnik.git,14,318,67,0,41,14,355,74,51,92,JavaScript,2018
+alphaTab,git://github.com/CoderLine/alphaTab.git,11,962,239,0,2,41,455,504,118,47,C#,2019
+Sequence,git://github.com/IanLunn/Sequence.git,12,286,227,10,11,35,188,3377,513,157,JavaScript,2015
+viewshare,git://github.com/LibraryOfCongress/viewshare.git,10,1148,44,5,33,18,185,36,13,11,JavaScript,2014
+softlayer-object-storage-php,git://github.com/softlayer/softlayer-object-storage-php.git,14,54,4,0,0,15,182,28,19,12,PHP,2015
+EMMA,git://github.com/domaubert/EMMA.git,9,777,30,0,1,14,328,2,0,3,C,2017
+Byzantium,git://github.com/Byzantium/Byzantium.git,15,1373,185,1,3,34,180,262,43,112,C,2014
+gnome-shell-extension-weather,git://github.com/simon04/gnome-shell-extension-weather.git,22,242,52,0,0,25,85,146,324,8,JavaScript,2012
+geany-themes,git://github.com/codebrainz/geany-themes.git,15,208,13,0,1,10,460,506,136,43,Python,2019
+auto-pairs,git://github.com/jiangmiao/auto-pairs.git,20,177,119,0,25,98,447,2393,266,42,Vim script,2019
+tagainijisho,git://github.com/Gnurou/tagainijisho.git,18,1774,96,4,26,85,449,210,36,30,C++,2019
+sniproxy,git://github.com/dlundquist/sniproxy.git,27,739,178,0,10,71,467,1638,310,115,C,2019
+playthecall-2013,git://github.com/playthecall/playthecall-2013.git,17,639,89,0,0,42,83,13,6,8,JavaScript,2013
+makahiki,git://github.com/csdl/makahiki.git,20,4889,500,1,8,74,182,7,5,7,Python,2015
+gradle-cargo-plugin,git://github.com/bmuschko/gradle-cargo-plugin.git,29,199,138,0,38,15,445,231,70,19,Groovy,2019
+tup,git://github.com/gittup/tup.git,16,2591,116,0,17,120,394,813,112,45,C,2018
+WorldBorder,git://github.com/Brettflan/WorldBorder.git,21,210,81,0,0,40,453,98,120,18,Java,2019
+Shiboken,git://github.com/pyside/Shiboken.git,22,2253,3,0,76,9,250,60,21,11,C++,2015
+powerlaw,git://github.com/jeffalstott/powerlaw.git,15,422,39,0,0,21,357,293,89,32,Jupyter Notebook,2018
+cfeclipse,git://github.com/cfeclipse/cfeclipse.git,29,2378,70,0,1,42,447,72,20,16,Java,2019
+xcoder,git://github.com/rayh/xcoder.git,17,496,29,0,37,8,165,422,72,12,Ruby,2014
+clever,git://github.com/clever-lang/clever.git,21,3851,177,0,1,28,223,40,16,9,C++,2015
+ValyriaTear,git://github.com/ValyriaTear/ValyriaTear.git,29,3464,382,2,11,33,409,160,59,29,Lua,2019
+spinhawk,git://github.com/rbowler/spinhawk.git,29,5783,33,0,22,16,411,62,21,15,C,2019
+grid,git://github.com/palasthotel/grid.git,23,1023,396,24,72,51,412,23,7,12,PHP,2019
+jade-mode,git://github.com/brianc/jade-mode.git,22,122,18,0,1,13,283,160,43,5,Emacs Lisp,2016
+money,git://github.com/moneyphp/money.git,35,597,225,23,26,17,455,2858,317,92,PHP,2019
+node-java,git://github.com/joeferner/node-java.git,43,564,227,0,52,156,413,1567,228,78,C++,2019
+travis-ci,git://github.com/travis-ci/travis-ci.git,97,3643,10064,0,232,130,457,7837,710,243,,2019
+rails-style-guide,git://github.com/rubocop-hq/rails-style-guide.git,89,379,33,0,0,23,428,5872,1051,263,,2019
+puppet-rvm,git://github.com/blt04/puppet-rvm.git,36,132,32,0,0,20,121,256,288,7,Puppet,2013
+qterminal,git://github.com/lxqt/qterminal.git,48,697,235,7,8,87,408,273,95,34,C++,2019
+node-opencv,git://github.com/peterbraden/node-opencv.git,108,972,303,1,4,115,413,3888,756,174,C++,2019
+jsdiff,git://github.com/kpdecker/jsdiff.git,44,418,94,0,37,73,455,4512,318,82,JavaScript,2019
+eredis,git://github.com/wooga/eredis.git,44,218,31,0,18,15,452,588,232,206,Erlang,2019
+KnpGaufretteBundle,git://github.com/KnpLabs/KnpGaufretteBundle.git,63,287,85,10,13,25,450,586,131,35,PHP,2019
+Front-end-Developer-Interview-Questions,git://github.com/h5bp/Front-end-Developer-Interview-Questions.git,190,782,92,0,0,5,408,43015,8664,2409,HTML,2019
+fastclick,git://github.com/ftlabs/fastclick.git,54,407,178,3,21,209,407,17847,3190,533,HTML,2019
+sigal,git://github.com/saimn/sigal.git,50,1054,165,7,25,56,452,582,128,34,JavaScript,2019
+winston-mongodb,git://github.com/winstonjs/winston-mongodb.git,30,218,98,13,42,7,443,219,102,13,JavaScript,2019
+tiled,git://github.com/bjorn/tiled.git,83,83,1184,61,61,417,363,6716,1313,385,C++,2018
+klein,git://github.com/twisted/klein.git,40,1287,62,2,8,55,410,711,114,43,Python,2019
+pyjwt,git://github.com/jpadilla/pyjwt.git,44,549,183,24,30,58,458,3015,382,56,Python,2019
+rdoc,git://github.com/ruby/rdoc.git,77,3025,303,0,75,69,467,568,361,50,Ruby,2019
+Custom-Meta-Boxes,git://github.com/humanmade/Custom-Meta-Boxes.git,50,1142,231,5,6,17,336,543,131,59,PHP,2018

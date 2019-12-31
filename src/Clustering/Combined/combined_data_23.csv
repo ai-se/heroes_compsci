@@ -1,0 +1,118 @@
+Project Name,git_url,Developers,Commit #,Closed Issues,Releases,Tags,Open Issues,Duration,Stars,Forks,Watchers,Language,Latest commit year,Type
+trellis ,git://github.com/trellis-ldp/trellis.git,3.0,1479,302,14,14,9,153,55,14,9,Java,2019,MoISSI
+abaco,git://github.com/TACC/abaco.git,7.0,1444,38,4,13,19,228,18,10,13,Python,2019,MoISSI
+NDS Lab Workbench,git://github.com/nds-org/ndslabs.git,7.0,1308,30,17,18,23,125,5,8,5,JavaScript,2018,MoISSI
+PCMSolver,git://github.com/PCMSolver/pcmsolver.git,8.0,1859,58,23,18,32,273,16,13,4,C++,2019,MoISSI
+yank,git://github.com/choderalab/yank.git,8.0,3075,495,47,47,170,319,59,43,18,Python,2019,MoISSI
+openforcefield,git://github.com/openforcefield/openforcefield.git,8.0,2683,152,14,15,158,139,72,21,23,Jupyter Notebook,2019,MoISSI
+signac-flow,git://github.com/glotzerlab/signac-flow.git,8.0,919,65,3,40,30,194,16,12,11,Python,2019,MoISSI
+learnsphere,git://github.com/LearnSphere/WorkflowComponents.git,9.0,909,81,0,1,12,184,15,9,29,TSQL,2019,MoISSI
+forcebalance,git://github.com/leeping/forcebalance.git,10.0,1999,34,7,11,20,334,66,45,16,Python,2019,MoISSI
+openmmtools,git://github.com/choderalab/openmmtools.git,10.0,1548,83,38,38,118,267,59,29,27,Python,2019,MoISSI
+foyer,git://github.com/mosdef-hub/foyer.git,10.0,638,60,19,20,50,242,34,39,15,Python,2019,MoISSI
+OpenMX,git://github.com/OpenMx/OpenMx.git,11.0,8269,173,0,89,78,393,42,19,8,R,2019,MoISSI
+quantum_package,http://github.com/LCPQ/quantum_package.git,11.0,2730,93,5,5,0,296,27,37,16,Fortran,2019,MoISSI
+parsl,git://github.com/Parsl/parsl.git,11.0,3280,475,0,33,250,163,188,47,29,Python,2019,MoISSI
+TauDEM,git://github.com/dtarb/TauDEM.git,11.0,299,99,9,10,54,351,124,69,32,C++,2019,MoISSI
+orca,git://github.com/RENCI-NRIG/orca5.git,11.0,1313,138,23,28,23,238,2,1,9,Java,2019,MoISSI
+xenon,git://github.com/NLeSC/Xenon.git,11.0,2452,370,24,26,22,348,24,13,7,Java,2019,MoISSI
+ACEMD,git://github.com/Acellera/htmd.git,12.0,4396,566,5,175,24,218,115,42,20,Rich Text Format,2019,MoISSI
+AMBER,git://github.com/Amber-MD/cpptraj.git,12.0,9250,264,3,3,47,260,38,29,9,C++,2019,MoISSI
+MPQC,git://github.com/ValeevGroup/mpqc.git,12.0,9854,45,0,59,2,266,35,18,23,C++,2018,MoISSI
+GooFit,git://github.com/GooFit/GooFit.git,12.0,1588,44,12,15,16,349,78,28,20,C++,2019,MoISSI
+tripal,git://github.com/tripal/tripal.git,13.0,5511,580,4,23,53,220,34,35,14,PLpgSQL,2019,MoISSI
+radical-pilot,git://github.com/radical-cybertools/radical.pilot.git,17.0,6905,1300,1,180,142,334,32,13,16,Python,2019,MoISSI
+SCIRun,git://github.com/SCIInstitute/SCIRun.git,18.0,10119,1274,43,86,338,407,59,51,17,C++,2019,MoISSI
+changa,git://github.com/N-BodyShop/changa.git,18.0,2716,15,0,9,11,247,23,16,15,C++,2019,MoISSI
+ABINIT,git://github.com/abinit/abinit.git,19.0,6793,11,3,16,11,82,97,41,14,Fortran,2018,MoISSI
+APBS,git://github.com/Electrostatics/apbs-pdb2pqr.git,19.0,6711,298,7,8,215,310,84,57,25,Python,2019,MoISSI
+BLIS,git://github.com/flame/blis.git,20.0,1807,172,0,31,60,306,616,134,62,C,2019,MoISSI
+cyclus,git://github.com/cyclus/cyclus.git,20.0,6809,557,40,48,95,409,42,51,14,C++,2019,MoISSI
+mast,git://github.com/uw-cmg/MAST.git,22.0,5050,388,13,69,83,251,10,5,10,Python,2018,MoISSI
+keplerproject,git://github.com/keplerproject/luafilesystem.git,22.0,330,53,0,18,25,532,519,197,61,C,2019,MoISSI
+PLUMED,git://github.com/plumed/plumed2.git,23.0,9705,304,28,61,53,343,130,138,37,C++,2019,MoISSI
+clowder,git://github.com/ncsa/clowder.git,28.0,6942,6,17,38,6,180,22,9,8,JavaScript,2019,MoISSI
+MOLCAS,https://gitlab.com/Molcas/OpenMolcas,29.0,1874,110,0,4,63,132,49,0,0,Fortran,2019,MoISSI
+NWChem,git://github.com/nwchemgit/nwchem.git,29.0,27012,99,6,8,27,106,142,77,38,Fortran,2019,MoISSI
+hubzero,git://github.com/hubzero/hubzero-cms.git,29.0,21394,22,9,121,26,314,33,44,15,PHP,2019,MoISSI
+hydroshare,git://github.com/hydroshare/hydroshare.git,30.0,12151,1794,78,82,435,270,95,20,45,Python,2019,MoISSI
+MADNESS,git://github.com/m-a-d-n-e-s-s/madness.git,31.0,5460,128,1,3,58,289,88,41,31,C++,2019,MoISSI
+metpy,git://github.com/Unidata/MetPy.git,33.0,2658,439,22,24,173,458,506,222,57,Python,2019,MoISSI
+Luigi ,git://github.com/spotify/luigi.git,35.0,3854,756,43,52,42,376,12593,2062,505,Python,2019,MoISSI
+HOOMD-blue,https://bitbucket.org/glotzer/hoomd-blue,36.0,11492,381,0,68,61,618,65,26,12,C++,2019,MoISSI
+pyscf,git://github.com/openforcefield/openforcefield.git,36.0,2683,152,14,15,158,139,72,21,23,Jupyter Notebook,2019,MoISSI
+irods,git://github.com/irods/irods.git,36.0,6441,3499,19,38,643,314,281,93,47,C++,2019,MoISSI
+OpenMM,git://github.com/pandegroup/openmm.git,38.0,6241,871,18,27,322,341,459,244,72,C++,2019,MoISSI
+cctools,git://github.com/cooperative-computing-lab/cctools.git,43.0,9482,702,18,187,57,351,92,86,19,C,2019,MoISSI
+RMG-Py,git://github.com/ReactionMechanismGenerator/RMG-Py.git,43.0,9014,572,20,23,283,529,150,130,52,Python,2019,MoISSI
+mdtraj,git://github.com/mdtraj/mdtraj.git,45.0,3111,738,18,23,31,369,253,164,45,C,2019,MoISSI
+LIBMESH,git://github.com/libMesh/libmesh.git,56.0,18808,399,15,68,160,376,360,196,56,C,2019,MoISSI
+LAMMPS,git://github.com/lammps/lammps.git,61.0,18907,384,43,117,59,329,660,780,101,C++,2019,MoISSI
+mdanalysis,git://github.com/MDAnalysis/mdanalysis.git,71.0,5473,1023,15,50,206,243,360,199,37,Python,2019,MoISSI
+Psi4,git://github.com/psi4/psi4.git,79.0,13806,598,6,17,119,348,385,247,60,C++,2019,MoISSI
+yt,git://github.com/yt-project/yt.git,93.0,25080,1467,0,39,186,137,212,144,23,Python,2019,MoISSI
+pymatgen,git://github.com/materialsproject/pymatgen.git,107.0,18253,434,167,265,85,423,498,434,117,Python,2019,MoISSI
+dealii,git://github.com/dealii/dealii.git,120.0,46370,1613,14,31,389,281,558,426,75,C++,2019,MoISSI
+OpenMPI,git://github.com/open-mpi/ompi.git,147.0,30214,1529,19,134,410,272,922,491,126,C,2019,MoISSI
+TRILINOS,git://github.com/trilinos/Trilinos.git,179.0,86574,2188,1,146,1047,211,470,286,112,C++,2019,MoISSI
+Use Galaxy,git://github.com/galaxyproject/galaxy.git,188.0,43627,1877,0,55,1170,249,659,590,66,Python,2019,MoISSI
+elasticsearch,git://github.com/elastic/elasticsearch.git,1050.0,49514,13546,14,263,1998,512,45843,15490,2798,Java,2019,MoISSI
+linum-relative,git://github.com/coldnew/linum-relative.git,10.0,72,23,2,3,11,312,145,20,9,Emacs Lisp,2018,SE
+sly,git://github.com/darsain/sly.git,8.0,322,186,0,22,63,181,2890,523,160,JavaScript,2015,SE
+api,git://github.com/apileipzig/api.git,10.0,192,23,0,6,21,73,15,4,4,Ruby,2012,SE
+pydpiper,git://github.com/Mouse-Imaging-Centre/pydpiper.git,10.0,1626,291,25,38,136,446,20,8,13,Python,2019,SE
+grammar-debugger,git://github.com/jnthn/grammar-debugger.git,12.0,66,7,0,0,13,318,26,18,7,Perl 6,2017,SE
+imgmin,git://github.com/rflynn/imgmin.git,12.0,302,24,1,1,26,289,561,31,31,C,2016,SE
+monitoring,git://github.com/sebastien/monitoring.git,8.0,102,7,0,0,11,406,431,59,30,Python,2018,SE
+pyBurlyBot,git://github.com/Clam-/pyBurlyBot.git,8.0,276,41,0,0,34,435,4,2,4,Python,2019,SE
+php-webdriver,git://github.com/Element-34/php-webdriver.git,14.0,255,12,0,5,33,425,127,59,21,PHP,2019,SE
+skype-java-api,git://github.com/taksan/skype-java-api.git,11.0,166,45,0,8,30,288,132,61,32,Java,2016,SE
+spymemcached,git://github.com/couchbase/spymemcached.git,9.0,979,0,0,100,0,324,162,98,27,Java,2018,SE
+Minecraft,git://github.com/fogleman/Minecraft.git,12.0,61,26,0,0,22,411,4066,916,243,Python,2019,SE
+exp4j,git://github.com/fasseg/exp4j.git,11.0,493,50,0,32,16,439,276,105,40,Java,2019,SE
+emacs-edbi,git://github.com/kiwanami/emacs-edbi.git,9.0,73,21,0,3,15,210,259,28,14,Emacs Lisp,2016,SE
+localpower,git://github.com/350dotorg/localpower.git,8.0,2730,126,0,28,55,83,7,2,2,JavaScript,2013,SE
+Game,git://github.com/Uga-Agga/Game.git,10.0,686,40,0,0,11,344,13,5,5,PHP,2018,SE
+Jeeqs,git://github.com/Jeeqs/Jeeqs.git,11.0,742,137,0,0,41,153,4,6,5,JavaScript,2015,SE
+octave-doctest,git://github.com/catch22/octave-doctest.git,9.0,648,115,7,8,25,456,13,5,4,MATLAB,2019,SE
+countrycode,git://github.com/vincentarelbundock/countrycode.git,12.0,263,130,1,5,29,433,182,52,10,R,2019,SE
+DiskLruCache,git://github.com/JakeWharton/DiskLruCache.git,13.0,136,35,0,9,17,229,5232,1124,266,Java,2016,SE
+python-snappy,git://github.com/andrix/python-snappy.git,19.0,122,42,0,4,13,455,338,72,14,Python,2019,SE
+LateralGM,git://github.com/IsmAvatar/LateralGM.git,18.0,1622,205,67,67,58,412,58,21,12,Java,2019,SE
+tlslite,git://github.com/trevp/tlslite.git,15.0,410,16,0,5,9,185,226,69,20,Python,2015,SE
+gradle-js-plugin,git://github.com/eriwen/gradle-js-plugin.git,26.0,268,71,0,19,61,426,375,106,28,JavaScript,2019,SE
+MassiveUnit,git://github.com/massiveinteractive/MassiveUnit.git,21.0,357,91,1,50,20,470,162,49,87,Haxe,2019,SE
+vim-flake8,git://github.com/nvie/vim-flake8.git,22.0,69,29,0,7,11,409,901,95,26,Vim script,2019,SE
+Jamstash,git://github.com/tsquillario/Jamstash.git,20.0,456,171,0,1,31,435,233,76,29,JavaScript,2019,SE
+eastwood,git://github.com/jonase/eastwood.git,19.0,1131,154,0,34,104,415,938,62,29,Clojure,2019,SE
+xapi-storage,git://github.com/xapi-project/xapi-storage.git,17.0,681,16,14,40,12,414,8,16,33,Python,2019,SE
+dotnetinstaller,git://github.com/dotnetinstaller/dotnetinstaller.git,23.0,683,29,4,7,37,402,160,72,13,C++,2019,SE
+vermont,git://github.com/tumi8/vermont.git,25.0,1273,20,0,2,13,459,46,18,17,C++,2019,SE
+numl,git://github.com/sethjuarez/numl.git,15.0,434,36,0,0,12,350,430,112,75,C#,2018,SE
+App-Inventor-Gallery,git://github.com/derrell/App-Inventor-Gallery.git,19.0,723,81,0,0,59,37,20,18,17,JavaScript,2011,SE
+elasticsearch-river-mongodb,git://github.com/richardwilly98/elasticsearch-river-mongodb.git,21.0,771,300,0,32,143,216,1076,221,83,Java,2016,SE
+PyHamcrest,git://github.com/hamcrest/PyHamcrest.git,25.0,492,29,3,17,6,467,394,67,19,Python,2019,SE
+zookeeper,git://github.com/zk-ruby/zookeeper.git,26.0,736,30,0,83,16,469,144,67,8,Ruby,2019,SE
+Spawner,git://github.com/klenin/Spawner.git,17.0,559,13,6,6,17,390,3,9,3,C++,2018,SE
+CoRD,git://github.com/dorianj/CoRD.git,23.0,649,27,2,2,37,221,330,101,36,Objective-C,2016,SE
+libhttpserver,git://github.com/etr/libhttpserver.git,22.0,767,97,0,23,10,409,324,98,35,C++,2019,SE
+FreeStreamer,git://github.com/muhku/FreeStreamer.git,19.0,999,249,0,215,152,428,1912,412,95,Objective-C,2019,SE
+Xcodeproj,git://github.com/CocoaPods/Xcodeproj.git,124.0,1961,264,85,128,74,423,1597,358,46,Ruby,2019,SE
+litecoin-old,git://github.com/coblee/litecoin-old.git,92.0,2012,7,0,57,12,40,42,10,2,TypeScript,2012,SE
+gae-boilerplate,git://github.com/coto/gae-boilerplate.git,54.0,935,115,2,7,43,408,697,206,93,Python,2019,SE
+etmodel,git://github.com/quintel/etmodel.git,46.0,6646,2463,2,25,166,450,14,5,17,Ruby,2019,SE
+berlinjs.org,git://github.com/berlinjs/berlinjs.org.git,150.0,951,39,0,0,22,433,122,152,22,CSS,2019,SE
+packagist,git://github.com/composer/packagist.git,110.0,1832,673,0,0,62,445,1331,402,80,PHP,2019,SE
+autoenv,git://github.com/kennethreitz/autoenv.git,40.0,236,85,2,4,21,409,4431,223,81,Shell,2019,SE
+netty-socketio,git://github.com/mrniko/netty-socketio.git,44.0,818,342,2,33,285,414,4423,1249,395,Java,2019,SE
+ogs,git://github.com/ufz/ogs.git,34.0,14551,438,14,18,127,450,76,199,27,C++,2019,SE
+composite,git://github.com/gwsystems/composite.git,37.0,2332,70,0,0,53,414,91,53,26,C++,2019,SE
+lhm,git://github.com/soundcloud/lhm.git,38.0,356,33,0,23,24,380,1620,168,167,Ruby,2018,SE
+rabbitmq-c,git://github.com/alanxz/rabbitmq-c.git,43.0,887,281,12,20,66,445,1167,524,120,C,2019,SE
+scikit-image,git://github.com/scikit-image/scikit-image.git,316.0,11776,1190,3,65,413,439,3386,1447,191,Python,2019,SE
+MinecraftForge,git://github.com/MinecraftForge/MinecraftForge.git,230.0,7184,2947,0,51,121,411,3503,1611,404,Java,2019,SE
+Aoe_Scheduler,git://github.com/AOEpeople/Aoe_Scheduler.git,39.0,539,117,6,30,166,449,377,213,101,PHP,2019,SE
+percol,git://github.com/mooz/percol.git,39.0,409,28,1,8,33,458,2846,141,91,Python,2019,SE
+Flexget,git://github.com/Flexget/Flexget.git,245.0,14047,1087,1,1413,71,456,1092,434,101,Python,2019,SE
+LittleProxy,git://github.com/adamfisk/LittleProxy.git,44.0,1003,177,5,18,76,352,1663,668,153,PHP,2017,SE
+framework,git://github.com/lift/framework.git,88.0,3881,1321,47,75,136,464,1203,271,113,Scala,2019,SE

@@ -1,0 +1,11 @@
+Attribute wise counts for the sample decision trees
+Commit # = 100
+Duration = 91
+Developers = 51
+Releases = 51
+Stars = 33
+Closed Issues = 27
+Tags = 25
+Forks = 10
+Open Issues = 8
+Watchers = 6

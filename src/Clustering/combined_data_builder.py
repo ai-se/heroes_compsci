@@ -25,8 +25,8 @@ def cleanup_se(file_name):
     source_projects['Type'] = 'SE'
     return source_projects
 
-number_of_samples = 10
-starting_index = 4
+number_of_samples = 100
+starting_index = 14
 
 for i in range(starting_index, number_of_samples+starting_index):
     se_df = cleanup_se('Samplings_with_mined_data/' + 'se_projects_' + str(i) + '_with_other_attributes.csv')

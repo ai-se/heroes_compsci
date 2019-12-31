@@ -1,0 +1,60 @@
+Project Name,git_url,Developers,Commit #,Closed Issues,Releases,Tags,Open Issues,Duration,Stars,Forks,Watchers,Language,Latest commit year
+linum-relative,git://github.com/coldnew/linum-relative.git,10,72,23,2,3,11,312,145,20,9,Emacs Lisp,2018
+sly,git://github.com/darsain/sly.git,8,322,186,0,22,63,181,2890,523,160,JavaScript,2015
+api,git://github.com/apileipzig/api.git,10,192,23,0,6,21,73,15,4,4,Ruby,2012
+pydpiper,git://github.com/Mouse-Imaging-Centre/pydpiper.git,10,1626,291,25,38,136,446,20,8,13,Python,2019
+grammar-debugger,git://github.com/jnthn/grammar-debugger.git,12,66,7,0,0,13,318,26,18,7,Perl 6,2017
+imgmin,git://github.com/rflynn/imgmin.git,12,302,24,1,1,26,289,561,31,31,C,2016
+monitoring,git://github.com/sebastien/monitoring.git,8,102,7,0,0,11,406,431,59,30,Python,2018
+pyBurlyBot,git://github.com/Clam-/pyBurlyBot.git,8,276,41,0,0,34,435,4,2,4,Python,2019
+php-webdriver,git://github.com/Element-34/php-webdriver.git,14,255,12,0,5,33,425,127,59,21,PHP,2019
+skype-java-api,git://github.com/taksan/skype-java-api.git,11,166,45,0,8,30,288,132,61,32,Java,2016
+spymemcached,git://github.com/couchbase/spymemcached.git,9,979,0,0,100,0,324,162,98,27,Java,2018
+Minecraft,git://github.com/fogleman/Minecraft.git,12,61,26,0,0,22,411,4066,916,243,Python,2019
+exp4j,git://github.com/fasseg/exp4j.git,11,493,50,0,32,16,439,276,105,40,Java,2019
+emacs-edbi,git://github.com/kiwanami/emacs-edbi.git,9,73,21,0,3,15,210,259,28,14,Emacs Lisp,2016
+localpower,git://github.com/350dotorg/localpower.git,8,2730,126,0,28,55,83,7,2,2,JavaScript,2013
+Game,git://github.com/Uga-Agga/Game.git,10,686,40,0,0,11,344,13,5,5,PHP,2018
+Jeeqs,git://github.com/Jeeqs/Jeeqs.git,11,742,137,0,0,41,153,4,6,5,JavaScript,2015
+octave-doctest,git://github.com/catch22/octave-doctest.git,9,648,115,7,8,25,456,13,5,4,MATLAB,2019
+countrycode,git://github.com/vincentarelbundock/countrycode.git,12,263,130,1,5,29,433,182,52,10,R,2019
+DiskLruCache,git://github.com/JakeWharton/DiskLruCache.git,13,136,35,0,9,17,229,5232,1124,266,Java,2016
+python-snappy,git://github.com/andrix/python-snappy.git,19,122,42,0,4,13,455,338,72,14,Python,2019
+LateralGM,git://github.com/IsmAvatar/LateralGM.git,18,1622,205,67,67,58,412,58,21,12,Java,2019
+tlslite,git://github.com/trevp/tlslite.git,15,410,16,0,5,9,185,226,69,20,Python,2015
+gradle-js-plugin,git://github.com/eriwen/gradle-js-plugin.git,26,268,71,0,19,61,426,375,106,28,JavaScript,2019
+MassiveUnit,git://github.com/massiveinteractive/MassiveUnit.git,21,357,91,1,50,20,470,162,49,87,Haxe,2019
+vim-flake8,git://github.com/nvie/vim-flake8.git,22,69,29,0,7,11,409,901,95,26,Vim script,2019
+Jamstash,git://github.com/tsquillario/Jamstash.git,20,456,171,0,1,31,435,233,76,29,JavaScript,2019
+eastwood,git://github.com/jonase/eastwood.git,19,1131,154,0,34,104,415,938,62,29,Clojure,2019
+xapi-storage,git://github.com/xapi-project/xapi-storage.git,17,681,16,14,40,12,414,8,16,33,Python,2019
+dotnetinstaller,git://github.com/dotnetinstaller/dotnetinstaller.git,23,683,29,4,7,37,402,160,72,13,C++,2019
+vermont,git://github.com/tumi8/vermont.git,25,1273,20,0,2,13,459,46,18,17,C++,2019
+numl,git://github.com/sethjuarez/numl.git,15,434,36,0,0,12,350,430,112,75,C#,2018
+App-Inventor-Gallery,git://github.com/derrell/App-Inventor-Gallery.git,19,723,81,0,0,59,37,20,18,17,JavaScript,2011
+elasticsearch-river-mongodb,git://github.com/richardwilly98/elasticsearch-river-mongodb.git,21,771,300,0,32,143,216,1076,221,83,Java,2016
+PyHamcrest,git://github.com/hamcrest/PyHamcrest.git,25,492,29,3,17,6,467,394,67,19,Python,2019
+zookeeper,git://github.com/zk-ruby/zookeeper.git,26,736,30,0,83,16,469,144,67,8,Ruby,2019
+Spawner,git://github.com/klenin/Spawner.git,17,559,13,6,6,17,390,3,9,3,C++,2018
+CoRD,git://github.com/dorianj/CoRD.git,23,649,27,2,2,37,221,330,101,36,Objective-C,2016
+libhttpserver,git://github.com/etr/libhttpserver.git,22,767,97,0,23,10,409,324,98,35,C++,2019
+FreeStreamer,git://github.com/muhku/FreeStreamer.git,19,999,249,0,215,152,428,1912,412,95,Objective-C,2019
+Xcodeproj,git://github.com/CocoaPods/Xcodeproj.git,124,1961,264,85,128,74,423,1597,358,46,Ruby,2019
+litecoin-old,git://github.com/coblee/litecoin-old.git,92,2012,7,0,57,12,40,42,10,2,TypeScript,2012
+gae-boilerplate,git://github.com/coto/gae-boilerplate.git,54,935,115,2,7,43,408,697,206,93,Python,2019
+etmodel,git://github.com/quintel/etmodel.git,46,6646,2463,2,25,166,450,14,5,17,Ruby,2019
+berlinjs.org,git://github.com/berlinjs/berlinjs.org.git,150,951,39,0,0,22,433,122,152,22,CSS,2019
+packagist,git://github.com/composer/packagist.git,110,1832,673,0,0,62,445,1331,402,80,PHP,2019
+autoenv,git://github.com/kennethreitz/autoenv.git,40,236,85,2,4,21,409,4431,223,81,Shell,2019
+netty-socketio,git://github.com/mrniko/netty-socketio.git,44,818,342,2,33,285,414,4423,1249,395,Java,2019
+ogs,git://github.com/ufz/ogs.git,34,14551,438,14,18,127,450,76,199,27,C++,2019
+composite,git://github.com/gwsystems/composite.git,37,2332,70,0,0,53,414,91,53,26,C++,2019
+lhm,git://github.com/soundcloud/lhm.git,38,356,33,0,23,24,380,1620,168,167,Ruby,2018
+rabbitmq-c,git://github.com/alanxz/rabbitmq-c.git,43,887,281,12,20,66,445,1167,524,120,C,2019
+scikit-image,git://github.com/scikit-image/scikit-image.git,316,11776,1190,3,65,413,439,3386,1447,191,Python,2019
+MinecraftForge,git://github.com/MinecraftForge/MinecraftForge.git,230,7184,2947,0,51,121,411,3503,1611,404,Java,2019
+Aoe_Scheduler,git://github.com/AOEpeople/Aoe_Scheduler.git,39,539,117,6,30,166,449,377,213,101,PHP,2019
+percol,git://github.com/mooz/percol.git,39,409,28,1,8,33,458,2846,141,91,Python,2019
+Flexget,git://github.com/Flexget/Flexget.git,245,14047,1087,1,1413,71,456,1092,434,101,Python,2019
+LittleProxy,git://github.com/adamfisk/LittleProxy.git,44,1003,177,5,18,76,352,1663,668,153,PHP,2017
+framework,git://github.com/lift/framework.git,88,3881,1321,47,75,136,464,1203,271,113,Scala,2019
