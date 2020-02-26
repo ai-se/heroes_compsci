@@ -224,8 +224,6 @@ androidannotations,git://github.com/androidannotations/androidannotations.git,79
 Movuca,git://github.com/rochacbruno/Movuca.git,14,580,11,0,0,16,97,110,33,9,CSS,2013
 protobuf,git://github.com/ruby-protobuf/protobuf.git,44,1539,64,45,154,30,423,369,90,19,Ruby,2019
 protobuf,git://github.com/chrisdew/protobuf.git,13,1539,23,3,3,12,415,223,78,18,C++,2019
-protobuf,git://github.com/ruby-protobuf/protobuf.git,44,1539,64,45,154,30,423,369,90,19,Ruby,2019
-protobuf,git://github.com/chrisdew/protobuf.git,13,1539,23,3,3,12,415,223,78,18,C++,2019
 devilspie2,git://github.com/gusnan/devilspie2.git,8,700,11,0,36,15,142,71,7,7,C,2014
 git-bz-moz,git://github.com/mozilla/git-bz-moz.git,23,272,28,0,0,16,308,13,22,8,Python,2017
 plone.app.workflowmanager,git://github.com/plone/plone.app.workflowmanager.git,18,157,26,0,14,19,307,10,11,163,Python,2017
