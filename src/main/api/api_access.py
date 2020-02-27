@@ -12,6 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 import networkx as nx
+from ratelimiter import RateLimiter
 
 class git_api_access(object):
     
@@ -213,4 +214,39 @@ class git_api_access(object):
         res = self.client.get(self.advanced_url)
         x = json.loads(res.content)
         return x
+
+    @RateLimiter(max_calls = 1, period = 1)
+    def make_ratelimited_call(self, url):
+        res = self.client.get(url)
+        return res
+
+    def get_contributors(self, url_type,url_details=''):
+        self.create_base_url(url_type)
+        self.create_advanced_url(url_details)
+        #print(self.advanced_url)
+        #res = self.client.get(self.advanced_url)
+        #x = json.loads(res.content)
+        x = [0]*100
+        page_number = 1
+        contributors_details = []
+        while len(x) >= 100 and page_number<=400:
+            paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
+            page_number += 1
+            print(paged_url)
+            res = self.make_ratelimited_call(paged_url)
+            #res = self.client.get(paged_url)
+            x = json.loads(res.content)
+            for i in range(len(x)):
+                contributors_details.append(x[i])
+        return contributors_details
+
+    def get_user(self, user_login):
+        user_base_url = self.api_base_url + '/users/' + user_login
+        print(user_base_url)
+        #self.create_advanced_url()
+        #print(self.advanced_url)
+        res = self.client.get(user_base_url)
+        x = json.loads(res.content)
+        return x
+
 

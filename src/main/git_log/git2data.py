@@ -19,6 +19,7 @@ import platform
 from os.path import dirname as up
 import operator
 from datetime import datetime
+from ratelimiter import RateLimiter
 
 class git2data(object):
     
@@ -165,4 +166,12 @@ class git2data(object):
 
         return commit_data,issue_data,create_date,release_data,git_stars,git_forks_count,git_watchers_count,max_language,git_tags_count
 
+    #@RateLimiter(max_calls = 1, period = 1)
+    def get_contributors(self):
+        contributors = self.git_client.get_contributors(url_type = 'contributors', url_details = '')
+        return contributors
+
+    @RateLimiter(max_calls = 1, period = 1)
+    def get_user(self, user_login):
+        return self.git_client.get_user(user_login)
 
